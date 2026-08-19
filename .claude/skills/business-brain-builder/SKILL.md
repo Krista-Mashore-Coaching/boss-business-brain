@@ -1,6 +1,6 @@
 ---
 name: business-brain-builder
-description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly into a folder on their desktop. Ten markdown files covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation.
+description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly. Ten questions covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Standalone (no kit vault detected), writes its own ten markdown files in a folder on their desktop. Inside a paid-student kit vault (Agent-OS or Authority-OS detected), fills the kit's own existing Brand-System files instead - see references/kit-brand-system-mapping.md - so every other content skill in the kit picks up the answers immediately. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation.
 audience: universal
 ships-to: [agent-aos, authority-os]
 funnel-stage: _foundation
@@ -130,11 +130,27 @@ Use that folder name for the rest of the session. Never call it "My Brain" or an
 
 **If you cannot write to their folder** (no filesystem access in their setup), degrade gracefully: output each file in full, give them the exact filename, and have them save it. Say plainly that the writing is normally automatic and this setup is the manual version. Do not pretend a file was written when it was not.
 
+**Now check whether "their folder" is a real kit vault.** Look for `Agent-OS/11-Brand-System/` or `Authority-OS/11-Brand-System/` inside it. If either exists, set `KIT_MODE = true` and `KIT_ROOT` to whichever one was found. Otherwise `KIT_MODE = false` (this is the standalone/Vegas case - proceed exactly as written below).
+
+**If `KIT_MODE = true`, read `references/kit-brand-system-mapping.md` now.** It tells you exactly which existing Brand-System file and section each of the ten files below writes into instead of its own standalone file, and which sections in those files are inherited and must never be touched. The ten questions, their order, and every rule in this skill stay identical - only the write destination changes. Do not tell the student about "kit mode" by name; just write into the right place.
+
+# STEP 0.75. Existing material (optional, saves them real time)
+
+Ask once, before the first real question:
+
+> "Quick thing before we start. Do you already have anything written down about your business - a website, an old bio, a brand document, a PDF, scripts you've used, a book, a podcast transcript? If you've got something, paste it in or drop the file now and I'll pull what I can straight from it instead of asking you to repeat it."
+
+If they give you something: read it fully before asking anything. As each of the ten files comes up, check this material first per Hard Rule 2 - if it answers the question, pull it, show it back to them, and ask only about what's missing or thin. **Never invent past what the material actually says**, per Hard Rule 3 - a website that's vague about their differentiator does not get an invented one; ask them directly instead.
+
+If they have nothing: say "no problem, we'll build it from scratch" and move straight into File 01. This is genuinely optional. Never make them feel behind for not having it.
+
 ---
 
 # THE TEN FILES
 
 Order matters. Later files read earlier ones so nobody answers the same thing twice.
+
+In kit mode, every "Build the file" instruction below means "fill in the mapped destination file's fill-in sections" per the mapping reference, not "create a new file with this name."
 
 ## FILE 01. `01-identity-and-positioning.md`
 
@@ -169,11 +185,23 @@ Then read `references/human-writing-enforcement.md` and install it into this fil
 
 After the file is written, stop and show them what is in it. Do not summarize it. **Show the actual lists.**
 
+**Standalone:**
+
 > "Before we keep going, open 02 and read it.
 >
 > Krista built this part into your brain on purpose. Everything below your voice section is a set of rules she wrote about how AI is never allowed to write for you. That's the banned word list. That's the banned phrases. That's every sentence pattern that makes writing sound like a machine wrote it.
 >
 > This is the reason your content won't sound like everyone else's. Most people using AI never build this half. They tell it what to say and never tell it what not to say, and that's exactly why you can spot AI writing from across the room.
+>
+> Every time you ask any AI to write something and you point it at this folder, these rules run first. You will never have to remember them."
+
+**Kit mode** (the banned list was already inherited, not just installed - say so honestly):
+
+> "Before we keep going, open `07-Voice-Rules.md` and scroll down to 'Words you NEVER use.'
+>
+> That list came with your kit - Krista already built it in, every student gets it. What we just did is add your OWN voice on top of it: how you sound, your descriptors, your example phrases. The banned list stops AI from sounding generic. Your section is what makes it sound like you specifically.
+>
+> Most people using AI only ever get the second half, if that. You've got both.
 >
 > Every time you ask any AI to write something and you point it at this folder, these rules run first. You will never have to remember them."
 
@@ -370,7 +398,7 @@ Then:
 >
 > **Write me an Instagram caption about [something specific to their business].**"
 
-Pick the topic from their own File 04 or 05 so the output uses a real story of theirs. Write the caption in their voice, pulling from `05-my-stories.md`, obeying `02-brand-voice.md`, and checked against `08-compliance.md` if it exists yet.
+Pick the topic from their own ideal-client or stories content so the output uses a real story of theirs. Write the caption in their voice, pulling from the stories content (`05-my-stories.md` standalone, `11-My-Stories.md` in kit mode), obeying the voice content (`02-brand-voice.md` standalone, `07-Voice-Rules.md` in kit mode), and checked against the compliance content if it exists yet (`08-compliance.md` standalone, `12-Compliance.md` in kit mode).
 
 ### ATTRIBUTION BEAT 4
 
@@ -384,17 +412,64 @@ Then hand off to the Content Engine.
 
 # CONTENT ENGINE HANDOFF
 
-Once the brain exists, run `content-engine-builder` in **read-the-folder mode**: it reads Files 01 through 10 and **asks nothing**. Everything it would ask has already been answered.
+Once the brain exists, run `content-engine-builder` in **read-the-folder mode**: it reads everything just written (Files 01 through 10, or their kit-mode destinations per the mapping reference) and **asks nothing**. Everything it would ask has already been answered.
 
-It produces the eleventh artifact, `11-ai-context.md`, the portable file: audience summary, positioning, best value proposition, unique mechanism, voice guidelines, offers, credibility, content guardrails, and a short paste-into-any-chat paragraph that sets the whole context in one shot.
+It produces the eleventh artifact - `11-ai-context.md` standalone, or `13-AI-Context.md` in kit mode: the portable file: audience summary, positioning, best value proposition, unique mechanism, voice guidelines, offers, credibility, content guardrails, and a short paste-into-any-chat paragraph that sets the whole context in one shot.
 
 Say:
 
 > "Last thing. This one file is your whole brain compressed into something you can paste into any AI, anywhere, in about three seconds. Different computer, different tool, doesn't matter."
 
-**If `content-engine-builder` is not installed,** build `11-ai-context.md` directly from Files 01 through 10 using the same structure. Never ask them to answer anything again to produce it.
+**If `content-engine-builder` is not installed,** build that file directly from everything just written, using the same structure. Never ask them to answer anything again to produce it.
+
+# FIRST SKILL FIRE (kit mode only - skip entirely in standalone)
+
+The read-back proved the brain works on a canned demo prompt. This proves it works on THEIR actual problem, live, before the session ends. Ported from the retired `kit-setup-coach` skill - this was the one piece of it worth keeping.
+
+Ask:
+
+> "One more thing before we wrap. What's the single most painful, time-consuming thing in your business right now?"
+
+Listen to their answer and map it to a starter skill using the table for `KIT_ROOT`:
+
+**Agent-OS:**
+
+| Pain mentioned | Starter skill |
+|---|---|
+| Email overflow, inbox chaos | `inbox-triage` |
+| Stale follow-ups, dropping leads | `daily-followup-drafter` |
+| Content struggle, no consistency | `social-post-editor` or `content-pillar-planner` |
+| Sales call / listing appointment prep takes forever | `listing-presentation-prep` |
+| New client onboarding messy | `transaction-timeline-tracker` |
+| Past clients silent, no retention | `past-client-anniversary-touch` or `home-value-update-drafter` |
+| Lead capture or magnet | `lead-magnet-builder` |
+| Landing page copy | `landing-page-copy` |
+| Nurture sequence drafting | `nurture-sequence-builder` |
+| Testimonial collection | `review-request-drafter` |
+
+**Authority-OS:**
+
+| Pain mentioned | Starter skill |
+|---|---|
+| Email overflow | `inbox-triage` |
+| Stale follow-ups | `daily-followup-drafter` |
+| Content struggle | `content-pillar-planner` or `social-post-editor` |
+| New offer to launch | `new-offer-launch` |
+| Sales call this week | `meeting-ready` |
+| Discovery call this week | `discovery-call-prep` |
+| Past clients silent | `client-anniversary-touch` or `quarterly-value-touch` |
+
+If nothing in the table fits their answer, use your judgment on the closest real skill in `.claude/skills/` rather than forcing a bad match.
+
+Say which skill you're about to run and why, then actually run it against their real situation - not a demo, their actual pain point:
+
+> "That's exactly what `<skill-name>` handles. Let's run it on your real situation right now, not a demo."
+
+Produce the real output. This is the moment they see the system solve something they actually brought in the door, not something Krista or an AI invented for them.
 
 # CLOSE
+
+**Standalone:**
 
 > "Open your folder. Eleven files. That's your business brain and you own all of it.
 >
@@ -402,7 +477,23 @@ Say:
 
 Then list the eleven filenames so they can check their own folder against it.
 
-If any file is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say exactly which ones and what would finish them. Never report a folder as complete when it is not.
+**Kit mode:**
+
+> "Open `11-Brand-System/`. Your Brand-System files are filled in now, not templates anymore - and every skill in your kit, from your daily emails to your ad copy, already reads straight from that folder. Nothing else to wire up."
+
+Then list what was filled per the mapping reference, plus the three new files (`11-My-Stories.md`, `12-Compliance.md`, `13-AI-Context.md`), so they can check their own kit against it.
+
+**Kit mode also gets the daily habit** (ported from the retired `kit-setup-coach`):
+
+> "Here's the only habit that matters from here: every morning, before your first meeting, type 'where are we?' Five minutes. That's the system.
+>
+> Open `Week-1-Challenges.md` in the root of your kit for the next 7 days of practice. Day 1's challenge is short, about 15 minutes. Do it tonight or tomorrow morning.
+>
+> If you get stuck on anything, `FAQ-and-Troubleshooting.md` is in the same place, or reach out to your support channel.
+>
+> You did it. Now go run your business."
+
+If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say exactly which ones and what would finish them. Never report a folder as complete when it is not.
 
 **Do not upsell here.** The build is the proof. If they got real value, they will ask what else there is.
 
@@ -412,4 +503,4 @@ If any file is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say exac
 - **No third-party names.** No guru, competitor, or source-author names in any output, ever.
 - **Never read any folder marked confidential or private.**
 - **One brain at a time.** Depth beats breadth.
-- **Log the run** (if the operating system has an operations log): output folder and files written go to `_Operations-Log.md`.
+- **Log the run** (if the operating system has an operations log): output folder and files written go to `_Operations-Log.md` standalone, or `<KIT_ROOT>/_Operations-Log.md` in kit mode - which Brand-System sections got filled, and the three new files created.
