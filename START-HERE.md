@@ -6,7 +6,11 @@ Claude will ask right away whether you're doing this live at an event on a clock
 
 ## Three steps
 
-**1. Unzip this folder somewhere you'll find it again.** Your Desktop is fine. Don't move anything out of it once it's unzipped, everything needs to stay together.
+**1. Unzip this folder into a folder called `Sites` in your home folder.** Not your Desktop. Don't move anything out of it once it's unzipped, everything needs to stay together.
+
+If you don't have a `Sites` folder yet, make one. On a Mac, open Finder, press Shift+Command+H to get to your home folder, then File, New Folder, and call it `Sites`. On Windows, open your user folder (the one with your name on it) and make a new folder called `Sites` there.
+
+Why not the Desktop: if you later upgrade to the full Operating System, it runs scheduled jobs in the background, and your Mac blocks those from running anything stored on the Desktop. They fail silently, which is the worst way for something to break. Starting in `Sites` now means everything you build today carries straight over and keeps working.
 
 **2. Open Claude Desktop, and point it at this folder.** If you're not sure how, look for an option to open or add a project folder, and choose this one.
 

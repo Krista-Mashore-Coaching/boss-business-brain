@@ -1,6 +1,6 @@
 ---
 name: business-brain-builder
-description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly. Ten questions covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Standalone (no kit vault detected), writes its own ten markdown files in a folder on their desktop. Inside a paid-student kit vault (Agent-OS or Authority-OS detected), fills the kit's own existing Brand-System files instead - see references/kit-brand-system-mapping.md - so every other content skill in the kit picks up the answers immediately. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation.
+description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly. Ten questions covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Standalone (no kit vault detected), writes its own ten markdown files in a folder under `~/Sites`. Inside a paid-student kit vault (Agent-OS or Authority-OS detected), fills the kit's own existing Brand-System files instead - see references/kit-brand-system-mapping.md - so every other content skill in the kit picks up the answers immediately. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation.
 audience: universal
 ships-to: [agent-aos, authority-os]
 funnel-stage: _foundation
@@ -120,7 +120,9 @@ Do not ask them to create a new folder in this case.
 
 **Only if genuinely nothing exists yet**, fall back to:
 
-> "You need one folder for all of this. On your desktop, right-click, New Folder, and name it your name or your business name. Tell me what you named it."
+> "You need one folder for all of this, and it needs to live in a folder called `Sites` in your home folder, not on your Desktop. On a Mac, press Shift+Command+H in Finder to get home, make a folder called `Sites` if you don't have one, then make a folder inside it named after you or your business. On Windows, same thing inside your user folder. Tell me what you named it."
+
+If they ask why not the Desktop, keep it to one sentence and make it about them, not about the technology: if they ever upgrade to the full Operating System it runs scheduled jobs in the background, and both Mac and Windows treat the Desktop as protected, so those jobs fail silently. Starting in `Sites` means everything they build today carries over and keeps working. Do not lecture, and do not repeat it.
 
 Use that folder name for the rest of the session. Never call it "My Brain" or anything generic.
 
