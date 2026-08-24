@@ -1,6 +1,6 @@
 ---
 name: business-brain-builder
-description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly. Ten questions covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Standalone (no kit vault detected), writes its own ten markdown files into whatever folder they are working in. Inside a paid-student kit vault (Agent-OS or Authority-OS detected), fills the kit's own existing Brand-System files instead - see references/kit-brand-system-mapping.md - so every other content skill in the kit picks up the answers immediately. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation.
+description: Interviews any business owner one question at a time and WRITES their AI Business Brain directly. Ten questions covering identity, voice, differentiator, ideal client, stories, client language, market, compliance, proof, and content. Standalone (no kit vault detected), writes its own ten markdown files into whatever folder they are working in. Inside a paid-student kit vault (Agent-OS or Authority-OS detected), fills the kit's own existing Brand-System files instead - see references/kit-brand-system-mapping.md - so every other content skill in the kit picks up the answers immediately. Runs in a 90-minute LIVE mode for events or a FULL mode solo, resumes where it left off, and ends with a read-back moment that proves the brain works. Use when someone says "build my business brain", "build my brain", "AI business brain", "brain builder", "set up my brain", "build my knowledge base", or arrives at an event ready to build their foundation. Also handles the paid upgrade: someone who already built their brain and later bought the Operating System reopens the same folder and says "start phase two", "I bought it", "I joined", "I'm a paid student", or "install my operating system", and it skips the interview entirely and runs the whole GitHub-and-install walkthrough instead.
 audience: universal
 ships-to: [agent-aos, authority-os]
 funnel-stage: _foundation
@@ -74,6 +74,13 @@ This skill is designed to be run more than once.
 > "You've got 01 through 05 done. That means identity, voice, differentiator, ideal client, and stories are locked. We're picking up at 06, your clients' exact words. About 40 minutes to finish all five remaining."
 
 Never re-interview for a file that already exists. If a file exists but is thin or marked `THIN, COME BACK TO THIS`, offer to deepen it rather than rebuild it.
+
+
+**If their files are already built and they have come back later, do not assume they want more interview.** At a live event the Business Brain gets built on day one and the Operating System is bought afterwards, so the most common reason somebody reopens this folder is that they joined and want it installed. Ask which:
+
+> "Your brain is already built. Are you back to finish the rest of it, or did you join the Operating System and you want me to install it?"
+
+**Go straight to PHASE 2 HANDOFF near the end of this file, skipping the interview entirely,** if they say any of: "start phase two", "phase 2", "I bought it", "I joined", "I'm a paid student", "install my operating system", "set up my OS", "I purchased", or anything else that plainly means they are now a customer. Never make somebody answer an interview question they already answered just to reach the install.
 
 ## Attribution beats
 
@@ -504,15 +511,19 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 The build is done. Ask ONE question, and only after the close above has landed.
 
-> "One last question. Have you joined the full Operating System yet?"
+> "Last thing. Did you join the full Operating System, or are you here on the free Business Brain?"
 
-**If they say no, not yet, or they are not sure:** say one line and stop.
+Give them a clean either/or. Do not phrase it so that "no" sounds like the wrong answer. Most of the room has not bought anything, and at an event the offer usually has not even been made yet when they build this.
 
-> "No problem. When you do, everything you built today carries straight over. You will not answer a single one of these questions twice."
+**If they are on the free version, have not bought, or are not sure:** say this, then stop.
 
-Then stop. Do not describe it, do not price it, do not ask again. The folder they are holding is the argument.
+> "Perfect. You have everything you came for and it is yours.
+>
+> If you do join the Operating System later, come straight back to this folder, open it in Claude, and say: **start phase two**. I will install the whole thing and carry every one of these answers over. You will not answer a single one of these questions twice."
 
-**If they say yes, they bought it:** run everything below. You are now installing their paid system, and you do the whole thing. They should never have to be told where to click by a human.
+That second paragraph is the important one and it is not a pitch, it is the instruction for how they get back in. Say it even if they seem uninterested. Then stop. Do not describe the Operating System, do not price it, do not ask again. The folder they are holding is the argument.
+
+**If they say they bought it:** run everything below. You are now installing their paid system, and you do the whole thing. They should never have to be told where to click by a human.
 
 ## Ground rules for Phase 2
 
