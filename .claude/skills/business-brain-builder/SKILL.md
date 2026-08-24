@@ -499,6 +499,129 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 **Do not upsell here.** The build is the proof. If they got real value, they will ask what else there is.
 
+
+# PHASE 2 HANDOFF (standalone only, skip entirely in kit mode)
+
+The build is done. Ask ONE question, and only after the close above has landed.
+
+> "One last question. Have you joined the full Operating System yet?"
+
+**If they say no, not yet, or they are not sure:** say one line and stop.
+
+> "No problem. When you do, everything you built today carries straight over. You will not answer a single one of these questions twice."
+
+Then stop. Do not describe it, do not price it, do not ask again. The folder they are holding is the argument.
+
+**If they say yes, they bought it:** run everything below. You are now installing their paid system, and you do the whole thing. They should never have to be told where to click by a human.
+
+## Ground rules for Phase 2
+
+- **One instruction at a time.** After anything they have to do themselves, stop and wait for them to say they are done. Do not race ahead.
+- **Never ask for a password and never type one.** They enter it themselves, always.
+- **Never move, rename, or delete their Business Brain folder.** It stays exactly where it is. The installer finds it on its own. Moving it is the one way today's work gets lost.
+- Tell them up front: about 15 minutes, and most of it is you working, not them.
+
+## P2.1. Which system
+
+Ask:
+
+> "Which one did you buy, the one for real estate agents and lenders, or the one for coaches and consultants?"
+
+Agents and lenders get `Krista-Mashore-Coaching/Agent-Authority-Operating-System`.
+Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operating-System`.
+
+**Ask, do not infer.** The profession they gave you in Step 0 is a hint and nothing more. People buy the one that fits the work they are about to do, which is not always the work they described. If they are not sure, ask what they are planning to use it for and take their answer. If they still do not know, tell them to check with the person who sold it to them, and wait.
+
+## P2.2. Do they have GitHub
+
+> "Do you already have a GitHub account?"
+
+**If yes,** ask for the username, read it back to confirm the spelling, and go to P2.3.
+
+**If no, or they are not sure,** walk them through it. One instruction at a time, waiting after each. Do not paste the whole list at them.
+
+1. Open a browser and go to `github.com`
+2. Click **Sign up**, top right
+3. Enter their email address
+4. Create a password. Tell them to save it in their password manager or write it down, because they will need it again
+5. Pick a username. Tell them it will be visible, so something simple and professional, their name plus a number is fine, and no spaces
+6. Solve the puzzle it shows, which is just proving they are a person
+7. Click **Create account**
+8. Go to their email, find the code GitHub just sent, and enter it
+9. If it asks about team size or what they plan to use it for, tell them to skip it or pick anything, it changes nothing
+
+Then ask for the exact username and **read it back to them character by character.** A wrong username is the single most common reason this stalls, because the invitation goes to a stranger and they sit waiting for an email that is never coming.
+
+## P2.3. Get them added
+
+Say this, filling in their real username:
+
+> "Your username is `[username]`. Krista's team has to add you before you can download anything.
+>
+> If you are at the event, hand that username to whoever is helping you in the room.
+>
+> If you are at home, email it to doit@kristamashore.com with the subject line: GitHub username for my Operating System.
+>
+> They add you, GitHub emails you an invitation, and you click Accept. Check your spam folder, GitHub invitations land there constantly."
+
+Then **stop and wait.** Do not continue until they say they have accepted.
+
+## P2.4. Verify it actually took
+
+When they say they accepted, check it rather than believing it. If `gh` is not installed yet, do P2.5 first and come back here.
+
+```
+gh repo view <THE REPO FROM P2.1>
+```
+
+- Repo details come back: they are in, continue.
+- 404 or not found: the invitation has not gone through, or they accepted it while signed into a different GitHub account. Ask which account they were signed into. Then wait. Do not look for another way in.
+
+## P2.5. Install the tool that downloads it
+
+Work out whether they are on Mac or Windows first, and use the right commands. Do not give them both and let them guess.
+
+1. Check: `gh --version`
+2. If missing:
+   - **Mac:** `brew install gh`. If Homebrew is missing, send them to `brew.sh` first and wait.
+   - **Windows:** `winget install --id GitHub.cli`. Then have them close and reopen the terminal, or `gh` will not be found yet.
+3. Check whether they are signed in: `gh auth status`
+4. If not signed in:
+   ```
+   gh auth login --hostname github.com --git-protocol https --web --scopes "repo,read:org,gist,workflow"
+   ```
+   Show them the one-time code **in large plain text.** Tell them to go to `github.com/login/device`, paste it, sign in, click Authorize. Then stop and wait. Do not continue while it is still waiting on them.
+5. Finish with `gh auth setup-git` and one sentence: this is what lets it pull updates from now on without asking for a password every time.
+
+## P2.6. Put the system on their machine
+
+**Mac:**
+```
+mkdir -p ~/Sites
+gh repo clone <THE REPO> ~/Sites/My-Operating-System
+```
+
+**Windows (PowerShell):**
+```
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\Sites"
+gh repo clone <THE REPO> "$env:USERPROFILE\Sites\My-Operating-System"
+```
+
+Then show them what landed and roughly how many skills are in there, so they can see it is real and not a folder of empty files.
+
+## P2.7. Hand off, and stop
+
+**Do not run the setup yourself.** It lives in the folder you just downloaded and it has to run from inside it.
+
+> "Your Operating System is on your computer, at `[the full path]`.
+>
+> Open a new Claude Code session pointed at that folder, and type: `set up my OS`
+>
+> That runs the real setup. It will find the Business Brain you just built and carry all of it over, so you never answer the same question twice."
+
+If they ask why a new session rather than this one: this folder holds one skill, the interview they just did. The full system lives in the new folder and has to be opened there. One sentence, then move on.
+
+
 # Rules
 
 - **Never invent facts.** No made-up stats, market data, or client results. If a number matters and was not provided, write `[VERIFY: number]`.
