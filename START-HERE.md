@@ -2,17 +2,13 @@
 
 This folder builds your AI Business Brain: real files that teach any AI who you are, how you talk, who you serve, and what makes you different. You own every file, forever, on your own machine.
 
-Claude will ask right away whether you're doing this live at an event on a clock, or working through it on your own - that decides how much gets built today versus later, and it will tell you exactly what to expect either way.
+Claude will ask right away whether you're doing this live at an event on a clock, or working through it on your own. That decides how much gets built today versus later, and it will tell you exactly what to expect either way.
 
 ## Three steps
 
-**1. Unzip this folder into a folder called `Sites` in your home folder.** Not your Desktop. Don't move anything out of it once it's unzipped, everything needs to stay together.
+**1. Unzip the folder.** Wherever it landed is fine. Your Downloads folder, your Desktop, anywhere you'll be able to find it again. The only thing that matters is that you don't move files out of it once it's unzipped, because everything in here needs to stay together.
 
-If you don't have a `Sites` folder yet, make one. On a Mac, open Finder, press Shift+Command+H to get to your home folder, then File, New Folder, and call it `Sites`. On Windows, open your user folder (the one with your name on it) and make a new folder called `Sites` there.
-
-Why not the Desktop: if you later upgrade to the full Operating System, it runs scheduled jobs in the background, and your Mac blocks those from running anything stored on the Desktop. They fail silently, which is the worst way for something to break. Starting in `Sites` now means everything you build today carries straight over and keeps working.
-
-**2. Open Claude Desktop, and point it at this folder.** If you're not sure how, look for an option to open or add a project folder, and choose this one.
+**2. Open Claude Desktop, and point it at this folder.** If you're not sure how, look for the option to open or add a project folder, and choose this one.
 
 **3. The first time you do this, Claude will ask if you trust this folder.** Click Trust. It only asks once, and it's Claude protecting you, not something going wrong.
 
