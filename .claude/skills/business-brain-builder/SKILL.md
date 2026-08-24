@@ -626,18 +626,36 @@ Work out whether they are on Mac or Windows first, and use the right commands. D
    Show them the one-time code **in large plain text.** Tell them to go to `github.com/login/device`, paste it, sign in, click Authorize. Then stop and wait. Do not continue while it is still waiting on them.
 5. Finish with `gh auth setup-git` and one sentence: this is what lets it pull updates from now on without asking for a password every time.
 
+## P2.5b. Name the folder BEFORE you clone it
+
+Ask them now, before anything is downloaded:
+
+> "What should we call your Operating System folder? Short, your business name with dashes, no spaces."
+
+Offer a sensible one built from their Business Brain as a tappable block so they can just take it:
+
+```
+[Their-Business-Name]
+```
+
+**Clone straight into that name. Never clone to a generic name and rename afterwards.**
+
+Why this matters, found live on 2026-08-24: Windows will not rename a folder while a process is sitting inside it, and the session IS that process. Renaming afterwards means moving the session to the parent folder, getting a permission dialog that has to be approved even in accept-edits mode, renaming, then moving back. Four steps and two dialogs to fix something that costs nothing if the folder is simply created with the right name.
+
+If they have no preference, use `My-Operating-System` and move on. Never spend more than one question on this.
+
 ## P2.6. Put the system on their machine
 
 **Mac:**
 ```
 mkdir -p ~/Sites
-gh repo clone <THE REPO> ~/Sites/My-Operating-System
+gh repo clone <THE REPO> ~/Sites/<THE NAME THEY CHOSE>
 ```
 
 **Windows (PowerShell):**
 ```
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\Sites"
-gh repo clone <THE REPO> "$env:USERPROFILE\Sites\My-Operating-System"
+gh repo clone <THE REPO> "$env:USERPROFILE\Sites\<THE NAME THEY CHOSE>"
 ```
 
 Then show them what landed and roughly how many skills are in there, so they can see it is real and not a folder of empty files.
