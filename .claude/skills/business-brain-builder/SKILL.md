@@ -531,6 +531,28 @@ That second paragraph is the important one and it is not a pitch, it is the inst
 - **Never ask for a password and never type one.** They enter it themselves, always.
 - **Never move, rename, or delete their Business Brain folder.** It stays exactly where it is. The installer finds it on its own. Moving it is the one way today's work gets lost.
 - Tell them up front: about 15 minutes, and most of it is you working, not them.
+- **Make every answer tappable, never typed.** Whenever you ask them something that has a small set of possible answers, or you ask them to tell you a step is finished, put the exact words they should send **in a fenced code block on its own line**. Claude Code renders a fenced block with a click control, so they tap it instead of typing. Offer each option as its own block.
+
+  Asking which system they bought looks like this, not like a sentence with two choices in it:
+
+  ```
+  real estate agents and lenders
+  ```
+
+  ```
+  coaches and consultants
+  ```
+
+  And when you are waiting on them, give them the word to send back:
+
+  ```
+  done
+  ```
+
+  Somebody who talks more than they type, or who is holding a laptop on their knees in a ballroom, should be able to get through the whole of Phase 2 without typing a single character. That is the standard.
+
+- **Never put a runnable block on a command that has to run somewhere else.** This bit for real on 2026-08-24: the handoff showed `set up my OS` as a tappable block while the session was still pointed at the Business Brain folder. The student tapped it, it ran in the wrong folder, and nothing there knew what it meant. At the handoff the **folder path** is the tappable thing, because that is what they paste into the folder picker. The command itself is written as plain words they will type in the NEW session, deliberately not tappable here.
+
 
 ## P2.1. Which system
 
@@ -624,11 +646,21 @@ Then show them what landed and roughly how many skills are in there, so they can
 
 **Do not run the setup yourself.** It lives in the folder you just downloaded and it has to run from inside it.
 
-> "Your Operating System is on your computer, at `[the full path]`.
+Give them the path as a tappable block, because they need to paste it into the folder picker:
+
+```
+[the full path to the cloned kit]
+```
+
+Then say, with the command as plain words and NOT as a code block:
+
+> "That is where your Operating System lives. Copy that path.
 >
-> Open a new Claude Code session pointed at that folder, and type: `set up my OS`
+> Open a new Claude Code session pointed at that folder. Once you are in there, type: set up my OS
 >
 > That runs the real setup. It will find the Business Brain you just built and carry all of it over, so you never answer the same question twice."
+
+**Do not make `set up my OS` tappable in this session.** It has to run in the new folder. A run control here fires it in the wrong place, which is exactly what happened live on 2026-08-24: the student tapped it, it ran against the Business Brain folder, and the session correctly reported it had no idea what the command meant. Confusing, and avoidable.
 
 If they ask why a new session rather than this one: this folder holds one skill, the interview they just did. The full system lives in the new folder and has to be opened there. One sentence, then move on.
 
