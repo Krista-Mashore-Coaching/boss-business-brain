@@ -182,10 +182,50 @@ In kit mode, every "Build the file" instruction below means "fill in the mapped 
 
 Ask one at a time (lane-specific wording in `references/profession-lanes.md`):
 
-1. Name and business name
-2. How long have you been doing this?
+1. Name and business name. Free text, obviously.
+2. "How long have you been doing this?" Offer these as taps:
+
+```
+under 2 years
+```
+```
+2 to 5 years
+```
+```
+5 to 10 years
+```
+```
+10 to 20 years
+```
+```
+20 years or more
+```
+```
+let me tell you myself
+```
 3. Where do you work? Towns, neighbourhoods, or the market you cover.
-4. What have you actually done that you are proud of?
+4. "What have you actually done that you're proud of?" Give them starting points, because most people go blank on this one:
+
+```
+volume, deals or clients
+```
+```
+a specific result I got someone
+```
+```
+awards or recognition
+```
+```
+how long I've lasted and why
+```
+```
+a transformation I'm known for
+```
+```
+let me tell you myself
+```
+
+Whatever they tap, follow with one open question to get the actual detail. The tap is a doorway, not the answer.
 
 **Do not ask who they serve here.** That is question one of the avatar block and asking it twice is the single most common way this interview loses people. This question is about geography and market only.
 
@@ -199,9 +239,65 @@ This file records their market and their proof metric. Files 07 and 09 read it i
 
 Ask one at a time:
 
-1. "How do you naturally talk? Direct, warm, fast, funny?"
-2. "When you're helping a client, are you a teacher, an advisor, or a peer?"
+1. "How do you naturally talk?" Offer these, and they can tap more than one:
+
+```
+direct, no wasted words
+```
+```
+warm and personal
+```
+```
+fast and high energy
+```
+```
+calm and measured
+```
+```
+funny, a bit irreverent
+```
+```
+let me describe it myself
+```
+
+2. "When you're helping a client, which one are you?"
+
+```
+the teacher, I explain things
+```
+```
+the advisor, I tell you what to do
+```
+```
+the peer, I'm in it with you
+```
+```
+depends on the client
+```
+```
+let me describe it myself
+```
+
 3. "What do you never want to sound like?"
+
+```
+salesy or pushy
+```
+```
+corporate and stiff
+```
+```
+hyped up or fake
+```
+```
+like I don't know my stuff
+```
+```
+like everybody else in my industry
+```
+```
+let me tell you myself
+```
 
 **Question 3 does more work than the other two combined.** Push on it. Most people have never been asked it and the first answer is usually shallow. One push: "Give me a specific example of something you've read in your industry that made you cringe."
 
@@ -233,7 +329,13 @@ After the file is written, stop and show them what is in it. Do not summarize it
 >
 > Every time you ask any AI to write something and you point it at this folder, these rules run first. You will never have to remember them."
 
-Then show them three or four of the actual banned phrases and ask: "Recognize any of those? Seen them in your own feed lately?" Let them react. That reaction is the moment the system stops being abstract.
+**Show them the scale of it, not a summary.** Open the file and walk the parts out loud so they see how much is in there:
+
+> "Look at what's actually in this. Eight parts. A banned word list. A banned phrase list. Banned sentence structures, because AI has tells in how it builds a sentence, not just which words it picks. Formatting rules. Human traits it has to keep. A personality dial that changes based on whether you're writing a social post or a loan document. And a checklist that runs before anything reaches you.
+>
+> That is roughly two thousand words of rules about how AI is never allowed to write for you. You didn't write any of it and you never have to remember any of it."
+
+Then show three or four of the actual banned phrases and ask: "Recognize any of those? Seen them in your own feed lately?" Let them react. That reaction is the moment the system stops being abstract.
 
 ## FILES 03 AND 04. Built together, from three questions
 
@@ -246,6 +348,27 @@ Ask only these, one at a time, and nothing else:
 3. "Finish this sentence: I specialize in helping ______ solve ______."
 
 Then offer two optional lifts together, and never push: anything they would call their unique mechanism, and a website or landing page you can read.
+
+**Ask whether they have more than one.** Before you generate, ask:
+
+> "Do you serve more than one kind of client? Plenty of people do."
+
+```
+just the one
+```
+```
+I have two
+```
+```
+I have three or more
+```
+```
+let me explain
+```
+
+If more than one, run the three questions again for each, and **generate a complete profile for every one of them.** Each gets its own labeled section inside the same file. Do not merge them into an average client, which is the fastest way to produce something that speaks to nobody. Krista's instruction 2026-08-25: *"they may have more than one client avatar, so you need to ask them if they have more than one avatar and do it for all their avatars."*
+
+The positioning set is built once, from the primary avatar, unless they say the businesses are genuinely separate.
 
 **Then generate, do not keep asking.** Build the full ideal client profile across all seven areas, then build the positioning set out of it: differentiation audit, three value propositions, the named mechanism, and the whole positioning set from authority statement through long bio. Generate the messaging pillars and the ten objections at the same time and hold them, because that is what makes files 10 and 11 fast later.
 

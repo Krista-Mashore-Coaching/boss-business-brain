@@ -102,6 +102,32 @@ If they say something is off, fix that one thing and move on. **Do not walk them
 
 ---
 
+## Handling more than one avatar
+
+Krista, 2026-08-25: *"they may have more than one client avatar, so you need to ask them if they have more than one avatar and do it for all their avatars."*
+
+Ask before you generate, and offer it as taps:
+
+> "Do you serve more than one kind of client? Plenty of people do."
+
+Run the three questions again for each one they name, and **generate a complete seven-area profile for every avatar.** Each gets its own labeled section inside the same file.
+
+**Never merge them into an average client.** A blend of two real people is a third person who does not exist, and content written to them speaks to nobody. Two full profiles beat one averaged one every time.
+
+The positioning set is generated once, from whichever avatar they call primary, unless they say the two sides of the business are genuinely separate. Then generate a positioning set for each and label them.
+
+## Handling more than one option, everywhere
+
+Krista, same instruction: *"every time you ask them multiple choice, make sure that you also allow them to add any of their own information."*
+
+Every set of tappable answers in this skill ends with an escape hatch. Never present a closed set. The wording varies with the question, but it always exists and it never sounds like a lesser choice:
+
+```
+let me tell you myself
+```
+
+Somebody taking that option gets a normal open question and no friction about it. The tappable options exist to save time for the majority, not to constrain the minority.
+
 ## RULES
 
 - **Three questions. Not four, not eight.** If you are tempted to ask a clarifying question, generate instead and let them correct it. A wrong guess they fix in five seconds beats a right question that costs two minutes.
