@@ -50,12 +50,12 @@ Budget, and say the budget out loud at the start so nobody panics:
 | Profession + folder | 5 | 1 |
 | 01 Identity | 8 | 4 |
 | 02 Brand voice + writing rules | 12 | 3 |
-| 03 + 04 Avatar and positioning | 20 | 3 |
-| 05 Stories | 20 | 5 |
+| 03 + 04 Avatar and differentiator | 25 | 6 |
+| 05 Stories | 18 | 5 |
 | Read-back | 5 | 0 |
 | Close and handoff | 5 | 0 |
 
-**Fifteen questions for the whole live block, and three of them build two files.** It used to be twenty-six. Krista's instruction, 2026-08-25: *"don't go so deep down with the questions of every little thing. There were way too many."* Ninety minutes is the ceiling, not the target. If you are asking a question that is not on this list, you have gone off the rails.
+**Eighteen questions for the whole live block, and six of them build two files.** It used to be twenty-six, and the two files that took fourteen now take six. Krista's instruction, 2026-08-25: *"don't go so deep down with the questions of every little thing. There were way too many."* Ninety minutes is the ceiling, not the target. If you are asking a question that is not on this list, you have gone off the rails.
 
 Files 06 through 10 are finished later, solo. Tell them that up front so the stopping point feels planned rather than rushed.
 
@@ -339,7 +339,9 @@ Then show three or four of the actual banned phrases and ask: "Recognize any of 
 
 ## FILES 03 AND 04. Built together, from three questions
 
-**Read `references/avatar-and-positioning-engine.md` and run it.** These two files are not two interviews. They are one three-question intake that generates both.
+**Read `references/avatar-and-positioning-engine.md` and `references/differentiator-engine.md`, then run them in that order.** The avatar comes first because the positioning is built out of it.
+
+The avatar takes three questions. The differentiator takes three more, and each of those is deliberately combined so one answer yields four things. Six questions total for two files that used to take fourteen.
 
 Ask only these, one at a time, and nothing else:
 
@@ -377,6 +379,26 @@ Show the avatar in full, then the positioning, then ask **one** question: "Anyth
 **Do not walk them through it section by section asking for approval.** One pass, one question.
 
 **If they arrived with an avatar document or a differentiator document, that document wins.** Structure it, never regenerate it, never re-interview.
+
+### Then the differentiator, three more combined questions
+
+**Read `references/differentiator-engine.md` and follow it.** It is Krista's own two Unique Differentiator custom GPTs merged, and it is not an extraction exercise. Her framing: *"You are NOT just extracting what they do. You are elevating how they think."* Somebody arrives describing themselves as a person who works hard and posts sometimes, and leaves describing themselves as somebody who runs a system for attention, trust and conversion.
+
+Three questions, each doing the work of four:
+
+1. "Walk me through exactly how you handle a client from start to finish. Focus on what you do differently that changes exposure, speed or price."
+2. "What do you do better than most people in your field, or what do you control in the process that others don't?"
+3. "When somebody chooses you, what actually happens differently compared to a typical experience?"
+
+**Never ask what mistakes other people make.** Infer it, or state it as contrast in the output. Asking gets you a complaint about competitors, not a differentiator.
+
+**Weak answer: one nudge, never a loop.** *"Good start. Let's sharpen it. Is this faster, more aggressive, more targeted, or something other people do not even attempt?"*
+
+**They genuinely do not know: teach, then offer options as taps.** The reference carries the exact script. That moment is where the identity shift happens, so do not rush past it.
+
+Then build the full profile: two or three system-name options for them to pick from, what the system does, the three to five steps, the "most people vs me" lines, the psychology of why it works, three or four power statements they can say out loud, the one-liner, and messaging they can use tomorrow. Rewrite anything generic automatically rather than handing it back.
+
+Close with one question: *"Do you want this to sound more high-end, more aggressive, or more simple?"* One rewrite pass, then stop.
 
 The engine reference carries the full generation spec, the quality bar, and the rules. Follow it rather than restating it here.
 
