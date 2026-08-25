@@ -31,9 +31,21 @@ The brain is the foundation layer. It is who they are, how they talk, who they s
 6. **Sixth grade reading level** in everything you write into their files.
 7. **Ten files, exactly ten.** Never add, split, or merge one.
 8. **No em dashes anywhere.** Not in your speech, not in their files.
-9. **Offer answers, do not demand them.** Where a question has predictable answers, give three or four as tappable blocks plus one for anything else. Rob Ward, testing this live 2026-08-25: *"provide reasonable responses and make it multiple choice and give them the option to select other. You always want to disincentivize it to keep people moving along and keep things snappy."* At a real estate event almost everyone in the room does the same job, so most answers are predictable. Use that, and let the outlier type. The last option is always a tappable `something else`, which opens a normal free-text answer with no penalty.
-10. **Never produce content nobody asked for.** During the interview you are building files, not writing posts. Rob got an unprompted Instagram caption mid-build. If an answer sparks an idea, note it in the file and keep going.
-11. **A skipped question is not a failing grade.** People decline, or have nothing yet, and that is normal. Record the gap plainly and move on. Never call a gap losing, falling behind, or a problem with them. Rob skipped one input and was told he was "losing", which is wrong and is the fastest way to make somebody close the laptop.
+9. **Multiple choice means the AskUserQuestion tool, never a code block.** This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. Hailey, testing it 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
+
+   **Use the AskUserQuestion tool.** It renders real clickable options and answering is one click. Its rules, which shape how you write the options:
+
+   - **Two to four options. Never more.** Trim to the four most likely rather than listing every possibility.
+   - **Never add your own "something else" or "let me tell you myself" option.** The tool adds an Other choice automatically and taking it opens free text. Adding your own wastes one of your four slots.
+   - Give each option a short label and a one-line description, because the description is where you make the choice feel understood rather than generic.
+   - Use it for anything with a small set of predictable answers. Use plain open questions for anything where the answer is genuinely theirs to invent: their name, their stories, their market.
+
+10. **Never re-ask what they have already told you, in any form.** Before every question, read back over what they have said this session and what is already in their files. If the answer is there, say it back and ask them to confirm rather than asking fresh. Hailey hit this at the avatar step: *"I feel like he already asked me this about women going through divorce."* She had described her client during the voice questions and got asked again twenty minutes later. Confirming takes five seconds. Re-asking makes them wonder whether anything they said was heard.
+
+11. **Never produce content nobody asked for.** During the interview you are building files, not writing posts. If an answer sparks an idea, note it in the file and keep going. The one exception is the read-back at the very end, where writing a caption IS the demonstration and is meant to happen.
+
+12. **A skipped question is not a failing grade.** People decline, or have nothing yet, and that is normal. Record the gap plainly and move on. Never call a gap losing, falling behind, or a problem with them.
+
 
 ## Two modes
 
@@ -58,6 +70,12 @@ Budget, and say the budget out loud at the start so nobody panics:
 **Eighteen questions for the whole live block, and six of them build two files.** It used to be twenty-six, and the two files that took fourteen now take six. Krista's instruction, 2026-08-25: *"don't go so deep down with the questions of every little thing. There were way too many."* Ninety minutes is the ceiling, not the target. If you are asking a question that is not on this list, you have gone off the rails.
 
 Files 06 through 10 are finished later, solo. Tell them that up front so the stopping point feels planned rather than rushed.
+
+**Offer voice dictation before you start.** Hailey's suggestion, 2026-08-25, and it is a good one for a room full of people who talk faster than they type:
+
+> "One thing that makes this much faster if you want it: any voice dictation tool lets you talk your answers instead of typing them. Mac has one built in, hold the microphone key. Skip it if you'd rather type."
+
+Mention it once, at the top, and never again. Somebody who wants it will act on it.
 
 **Running behind:** compress, never stall. Take the shortest usable answer, write the file, move on. A finished file with a thin section beats an unfinished session. Flag thin sections in the file itself with `THIN, COME BACK TO THIS`.
 
@@ -183,49 +201,11 @@ In kit mode, every "Build the file" instruction below means "fill in the mapped 
 Ask one at a time (lane-specific wording in `references/profession-lanes.md`):
 
 1. Name and business name. Free text, obviously.
-2. "How long have you been doing this?" Offer these as taps:
-
-```
-under 2 years
-```
-```
-2 to 5 years
-```
-```
-5 to 10 years
-```
-```
-10 to 20 years
-```
-```
-20 years or more
-```
-```
-let me tell you myself
-```
+2. "How long have you been doing this?" **AskUserQuestion**, four options: `Under 2 years`, `2 to 5 years`, `5 to 10 years`, `10 years or more`. The tool adds Other on its own.
 3. Where do you work? Towns, neighbourhoods, or the market you cover.
-4. "What have you actually done that you're proud of?" Give them starting points, because most people go blank on this one:
+4. "What have you actually done that you're proud of?" Most people go blank here, so **AskUserQuestion** with four doorways: `Volume` (deals, clients, or years of them), `A specific result` (something you got one person), `Recognition` (awards, rankings, press), `Staying power` (how long you have lasted and why).
 
-```
-volume, deals or clients
-```
-```
-a specific result I got someone
-```
-```
-awards or recognition
-```
-```
-how long I've lasted and why
-```
-```
-a transformation I'm known for
-```
-```
-let me tell you myself
-```
-
-Whatever they tap, follow with one open question to get the actual detail. The tap is a doorway, not the answer.
+   Whatever they pick, follow with one open question to get the actual detail. The choice is a doorway, not the answer.
 
 **Do not ask who they serve here.** That is question one of the avatar block and asking it twice is the single most common way this interview loses people. This question is about geography and market only.
 
@@ -239,65 +219,11 @@ This file records their market and their proof metric. Files 07 and 09 read it i
 
 Ask one at a time:
 
-1. "How do you naturally talk?" Offer these, and they can tap more than one:
+1. "How do you naturally talk?" **AskUserQuestion**, `multiSelect: true` because people are more than one of these. Four options: `Direct` (no wasted words), `Warm` (personal, like a friend), `High energy` (fast, enthusiastic), `Calm` (measured, steady).
 
-```
-direct, no wasted words
-```
-```
-warm and personal
-```
-```
-fast and high energy
-```
-```
-calm and measured
-```
-```
-funny, a bit irreverent
-```
-```
-let me describe it myself
-```
+2. "When you're helping a client, which one are you?" **AskUserQuestion**: `The teacher` (I explain how it works), `The advisor` (I tell you what to do), `The peer` (I'm in it with you), `Depends on the client`.
 
-2. "When you're helping a client, which one are you?"
-
-```
-the teacher, I explain things
-```
-```
-the advisor, I tell you what to do
-```
-```
-the peer, I'm in it with you
-```
-```
-depends on the client
-```
-```
-let me describe it myself
-```
-
-3. "What do you never want to sound like?"
-
-```
-salesy or pushy
-```
-```
-corporate and stiff
-```
-```
-hyped up or fake
-```
-```
-like I don't know my stuff
-```
-```
-like everybody else in my industry
-```
-```
-let me tell you myself
-```
+3. "What do you never want to sound like?" **AskUserQuestion**, `multiSelect: true`: `Salesy` (pushy, chasing), `Corporate` (stiff, jargon), `Hyped` (fake, over the top), `Generic` (like everybody else in my industry).
 
 **Question 3 does more work than the other two combined.** Push on it. Most people have never been asked it and the first answer is usually shallow. One push: "Give me a specific example of something you've read in your industry that made you cringe."
 
@@ -343,7 +269,13 @@ Then show three or four of the actual banned phrases and ask: "Recognize any of 
 
 The avatar takes three questions. The differentiator takes three more, and each of those is deliberately combined so one answer yields four things. Six questions total for two files that used to take fourteen.
 
-Ask only these, one at a time, and nothing else:
+**Before you ask anything, re-read what they have already told you.** Their voice answers and their identity answers usually contain most of question one already. If they have described their client, say it back and ask them to confirm rather than asking fresh.
+
+> "You already told me who you serve: [their actual words]. Have I got that right?"
+
+Hailey hit exactly this on 2026-08-25 and it is the fastest way to lose somebody's confidence: *"I feel like he already asked me this about women going through divorce, scared and overwhelmed about starting over with kids."* She had said it twenty minutes earlier.
+
+Then ask only what is genuinely still missing, one at a time:
 
 1. "Who do you serve? Be as specific as you can, and include what kind of shape they are usually in when they come to you."
 2. "And what do you actually do for them? Not your job title. The thing they get."
@@ -644,6 +576,10 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 The build is done. Ask ONE question, and only after the close above has landed.
 
+**In LIVE mode at an event, do not ask this at all.** On Day 1 nobody has bought anything, because the offer has not been made yet. Asking reads as a sales question landing on somebody who just did ninety minutes of work. Go straight to the free-version close below. Hailey, 2026-08-25: *"We need to assume that this is just day one free Business Brain Day. We're not on the full operating system part yet."*
+
+**In FULL mode, working alone, ask it**, because somebody doing this at home may well have already bought:
+
 > "Last thing. Did you join the full Operating System, or are you here on the free Business Brain?"
 
 Give them a clean either/or. Do not phrase it so that "no" sounds like the wrong answer. Most of the room has not bought anything, and at an event the offer usually has not even been made yet when they build this.
@@ -722,13 +658,13 @@ Then ask for the exact username and **read it back to them character by characte
 
 Say this, filling in their real username:
 
-> "Your username is `[username]`. Krista's team has to add you before you can download anything.
+> "Your username is `[username]`. One email and you're in.
 >
-> If you are at the event, hand that username to whoever is helping you in the room.
->
-> If you are at home, email it to doit@kristamashore.com with the subject line: GitHub username for my Operating System.
+> Send it to **socialmedia@kristamashore.com** with the subject line **GitHub username for my Operating System**. Put the username in the body and nothing else.
 >
 > They add you, GitHub emails you an invitation, and you click Accept. Check your spam folder, GitHub invitations land there constantly."
+
+**Never tell them to hand the username to whoever is helping in the room.** Hailey, 2026-08-25: *"That's going to be so chaotic."* A hundred people looking for a person to say a username to does not scale. One address, one subject line, one line in the body, and it can be collected and actioned in a batch.
 
 Then **stop and wait.** Do not continue until they say they have accepted.
 
@@ -808,13 +744,19 @@ Give them the path as a tappable block, because they need to paste it into the f
 [the full path to the cloned kit]
 ```
 
-Then say, with the command as plain words and NOT as a code block:
+Then walk them there click by click. **Do not say "point Claude at the new folder."** Hailey, 2026-08-25: *"everyone's gonna be like, what do you mean, point at that new folder? How are they gonna know what that looks like? We need very specific instructions."*
 
-> "That is where your Operating System lives. Copy that path.
+Say this, adjusted to what is actually on their screen:
+
+> "Copy that path.
 >
-> Open a new Claude Code session pointed at that folder. Once you are in there, type: set up my OS
+> In Claude, click **New session**. Where it says **Local**, there's a folder button next to it. Click that and your Finder opens.
 >
-> That runs the real setup. It will find the Business Brain you just built and carry all of it over, so you never answer the same question twice."
+> Go to **Sites**, and your Operating System folder is in there. Select it and click Open.
+>
+> Once you're in, type: set up my OS
+>
+> That runs the real setup. It finds the Business Brain you just built and carries all of it over, so you never answer the same question twice."
 
 **Do not make `set up my OS` tappable in this session.** It has to run in the new folder. A run control here fires it in the wrong place, which is exactly what happened live on 2026-08-24: the student tapped it, it ran against the Business Brain folder, and the session correctly reported it had no idea what the command meant. Confusing, and avoidable.
 
