@@ -42,16 +42,17 @@ Files 01 through 05, then the read-back. Stop there. That is the block.
 
 Budget, and say the budget out loud at the start so nobody panics:
 
-| Segment | Minutes |
-|---|---|
-| Profession + folder | 5 |
-| 01 Identity | 10 |
-| 02 Brand voice + writing rules | 15 |
-| 03 Differentiator | 15 |
-| 04 Ideal client | 15 |
-| 05 Stories | 20 |
-| Read-back | 5 |
-| Close and handoff | 5 |
+| Segment | Minutes | Questions |
+|---|---|---|
+| Profession + folder | 5 | 1 |
+| 01 Identity | 8 | 4 |
+| 02 Brand voice + writing rules | 12 | 3 |
+| 03 + 04 Avatar and positioning | 20 | 3 |
+| 05 Stories | 20 | 5 |
+| Read-back | 5 | 0 |
+| Close and handoff | 5 | 0 |
+
+**Fifteen questions for the whole live block, and three of them build two files.** It used to be twenty-six. Krista's instruction, 2026-08-25: *"don't go so deep down with the questions of every little thing. There were way too many."* Ninety minutes is the ceiling, not the target. If you are asking a question that is not on this list, you have gone off the rails.
 
 Files 06 through 10 are finished later, solo. Tell them that up front so the stopping point feels planned rather than rushed.
 
@@ -131,6 +132,19 @@ Do not ask them to create a new folder in this case.
 
 **Where the folder lives does not matter.** Anywhere they can find it again is fine, including the Desktop and including whatever folder their download landed in. Nothing here runs in the background, so nothing can break from the location. Never send someone off to create a special folder or move one before they can start: at an event that is the step where the room falls apart, and it buys nothing. If they later buy the full Operating System, its installer decides where the paid kit lives and finds this folder wherever it happens to sit.
 
+**On a Mac, expect a macOS permission box, and say so before it appears.**
+
+macOS gates any app's access to **Desktop, Documents and Downloads**. The first time Claude reads a folder in one of those, macOS puts up its own box: *"Claude would like to access files in your Downloads folder."* That is separate from Claude's own Trust dialog, and it catches people out because it arrives second and looks like something went wrong.
+
+Get ahead of it in one line:
+
+> "Your Mac is about to ask whether Claude can see that folder. Click Allow. That is your Mac, not me, and it only asks once."
+
+If they clicked Don't Allow by mistake, they fix it at Apple menu, System Settings, Privacy and Security, Files and Folders, then switch Claude back on for that folder. Do not try to work around it any other way.
+
+`~/Sites` and the home folder itself are not gated, which is why the paid kit installs there. Do not send somebody off to create a folder before they can start; the one-line warning costs nothing and a folder-creation ceremony in a ballroom costs the room.
+
+
 Use that folder name for the rest of the session. Never call it "My Brain" or anything generic.
 
 **Either way**, then confirm you can write to it. Write a test file, `00-README.md`, containing the folder's purpose and the list of ten files coming. Show them it appeared.
@@ -167,8 +181,10 @@ Ask one at a time (lane-specific wording in `references/profession-lanes.md`):
 
 1. Name and business name
 2. How long have you been doing this?
-3. Who do you serve, and where?
+3. Where do you work? Towns, neighbourhoods, or the market you cover.
 4. What have you actually done that you are proud of?
+
+**Do not ask who they serve here.** That is question one of the avatar block and asking it twice is the single most common way this interview loses people. This question is about geography and market only.
 
 Build a file that positions them as a trusted authority: who they are, where they work, how long, who they serve, what they have done.
 
@@ -216,58 +232,27 @@ After the file is written, stop and show them what is in it. Do not summarize it
 
 Then show them three or four of the actual banned phrases and ask: "Recognize any of those? Seen them in your own feed lately?" Let them react. That reaction is the moment the system stops being abstract.
 
-## FILE 03. `03-unique-differentiator.md`
+## FILES 03 AND 04. Built together, from three questions
 
-**If they already have a differentiator document, that document is the source of truth.** Clean it up and structure it. Do not re-interview. Ask at most one question, and only if something critical is genuinely missing.
+**Read `references/avatar-and-positioning-engine.md` and run it.** These two files are not two interviews. They are one three-question intake that generates both.
 
-Otherwise, ask one at a time:
+Ask only these, one at a time, and nothing else:
 
-1. "What makes you different from every other [their profession] in your market?"
-2. "Why should somebody hire you instead of the person down the street?"
-3. "Walk me through your process, step by step, that others don't do."
-4. "Does that process have a name? If not, we're going to give it one."
-5. "What are the claims everyone in your space makes? The stuff on every website?"
+1. "Who do you serve? Be as specific as you can, and include what kind of shape they are usually in when they come to you."
+2. "And what do you actually do for them? Not your job title. The thing they get."
+3. "Finish this sentence: I specialize in helping ______ solve ______."
 
-Question 5 is the differentiation audit. Use their answer to find where their own description sounds generic, then rewrite it specific.
+Then offer two optional lifts together, and never push: anything they would call their unique mechanism, and a website or landing page you can read.
 
-Build the file with all of this:
+**Then generate, do not keep asking.** Build the full ideal client profile across all seven areas, then build the positioning set out of it: differentiation audit, three value propositions, the named mechanism, and the whole positioning set from authority statement through long bio. Generate the messaging pillars and the ten objections at the same time and hold them, because that is what makes files 10 and 11 fast later.
 
-- **The named system**, with their business name on it, plus the steps inside it
-- **Unique mechanism**: name it, what it is, why it works, and what it replaces (old way vs new way). If they did not supply one, infer it from their process and label it clearly as `PROPOSED, CONFIRM THIS`
-- **Three versions of their value proposition**: (A) clear and direct with no hype, (B) premium and authoritative, (C) simple and conversational. Each one names who they help, the painful problem, the mechanism, and the transformation
-- **A "most people vs me" comparison** built from question 5
-- **Positioning set**: a one-sentence authority statement, a two to three sentence "what I do" paragraph, a website hero (headline, subhead, three bullets), a short bio of 75 to 120 words, and a long bio of 200 to 300 words
-- **Three or four lines they can say out loud** in a real client conversation (lane-specific setting in `references/profession-lanes.md`)
+Show the avatar in full, then the positioning, then ask **one** question: "Anything in there wrong?" Offer `nothing, that's right` and `one thing is off` as things they tap. Fix what they name. Move on.
 
-Everything after this file uses it. Do not move on until it is solid.
+**Do not walk them through it section by section asking for approval.** One pass, one question.
 
-## FILE 04. `04-ideal-client.md`
+**If they arrived with an avatar document or a differentiator document, that document wins.** Structure it, never regenerate it, never re-interview.
 
-**If they already have an avatar document, structure it, do not re-interview.** More than one avatar is normal. Keep each as its own labeled section inside this one file.
-
-Otherwise ask one at a time. **Ask only what they alone can know:**
-
-1. "Who exactly are you trying to reach? Age, life stage, money situation, what's going on in their life."
-2. "What's their main problem right now?"
-3. "What have they already tried that didn't work?"
-4. "What are they actually afraid of?"
-5. "What do they say in their head that they'd never say out loud?"
-6. "What do they absolutely NOT want to do to fix this?"
-7. "If somebody fixed all of it overnight, what would their life look like?"
-8. "Who or what do they blame for being stuck?"
-9. "Is there anything they secretly get out of staying where they are?"
-
-Questions 8 and 9 are uncomfortable and they are where the best marketing lives. Ask them anyway. If someone genuinely cannot answer 9, skip it.
-
-**In LIVE mode, ask 1 through 6 and infer the rest.**
-
-**Then infer, do not ask, and show back for confirmation:** the five emotions they feel now versus the five they want to feel, their limiting beliefs, what the market tells them they need, what they believe they must sacrifice, what they would be proud to say out loud, and the five outcomes that would change their world. Present these as "here's what I'd expect to be true, correct me where I'm wrong." That is the speed lever. Inferring and confirming is three times faster than asking, and the answers are usually better.
-
-Build the profile around: what keeps them up at night, what they already tried, what they say out loud, and **what they will never admit**. Write internal dialogue as real quotes, not descriptions. This is one person, not a demographic.
-
-**Quality bar: if the profile could describe anyone, it is wrong.** It needs specific income ranges, financial tension, life stage, timing pressure, real internal thoughts, and at least one emotional contradiction. Regenerate before showing them if it reads generic.
-
-File 06 reads this file. The richer the real language here, the fewer questions 06 has to ask.
+The engine reference carries the full generation spec, the quality bar, and the rules. Follow it rather than restating it here.
 
 ## FILE 05. `05-my-stories.md`
 

@@ -10,7 +10,9 @@ Claude will ask right away whether you're doing this live at an event on a clock
 
 **2. Open Claude Desktop, and point it at this folder.** If you're not sure how, look for the option to open or add a project folder, and choose this one.
 
-**3. The first time you do this, Claude will ask if you trust this folder.** Click Trust. It only asks once, and it's Claude protecting you, not something going wrong.
+**3. Click Trust when Claude asks.** It only asks once, and it's Claude protecting you, not something going wrong.
+
+**On a Mac you may see a second box, from your Mac rather than from Claude**, saying Claude would like to access files in that folder. Click Allow. Same idea, and it also only asks once.
 
 That's it. You don't need to type anything special. Say hi, or say nothing at all, and it starts on its own.
 
