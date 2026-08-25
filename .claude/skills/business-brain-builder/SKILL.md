@@ -595,6 +595,9 @@ gh repo view <THE REPO FROM P2.1>
 - Repo details come back: they are in, continue.
 - 404 or not found: the invitation has not gone through, or they accepted it while signed into a different GitHub account. Ask which account they were signed into. Then wait. Do not look for another way in.
 
+
+**Windows: quitting Claude means quitting from the system tray.** Closing the window leaves it running, so anything that needed a restart still will not work. Tell them: find the Claude icon in the system tray, the small icons at the bottom right near the clock, right-click it and choose Quit, watch it disappear, then reopen. Hailey did not know this and neither will most of the room.
+
 ## P2.5. Install the tool that downloads it
 
 Work out whether they are on Mac or Windows first, and use the right commands. Do not give them both and let them guess.
@@ -602,7 +605,9 @@ Work out whether they are on Mac or Windows first, and use the right commands. D
 1. Check: `gh --version`
 2. If missing:
    - **Mac:** `brew install gh`. If Homebrew is missing, send them to `brew.sh` first and wait.
-   - **Windows:** `winget install --id GitHub.cli`. Then have them close and reopen the terminal, or `gh` will not be found yet.
+   - **Windows:** `winget install --id GitHub.cli`.
+
+**Windows, choosing the right Git download.** The download page offers more than one build and the wrong one fails confusingly. **Almost everybody needs the 64-bit Standalone Installer, which covers both Intel and AMD.** ARM64 is only for ARM devices, which is rare. If they are not sure, have them open Settings, System, About and read the processor line. Rob picked the wrong one himself on this exact page. Then have them close and reopen the terminal, or `gh` will not be found yet.
 3. Check whether they are signed in: `gh auth status`
 4. If not signed in:
    ```
