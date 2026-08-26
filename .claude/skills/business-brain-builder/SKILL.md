@@ -466,13 +466,9 @@ Wait for them to type it. **They type it, not you.** The point is that they do i
 
 Answer from their files. In their voice. Their market, their differentiator, their positioning. Nothing generic. If the answer comes out generic, their files are thin and you should say so and fix it rather than pretending.
 
-Then:
+**Stop there. Do not ask them to write a social post.**
 
-> "One more. Type this:
->
-> **Write me an Instagram caption about [something specific to their business].**"
-
-Pick the topic from their own ideal-client or stories content so the output uses a real story of theirs. Write the caption in their voice, pulling from the stories content (`05-my-stories.md` standalone, `11-My-Stories.md` in kit mode), obeying the voice content (`02-brand-voice.md` standalone, `07-Voice-Rules.md` in kit mode), and checked against the compliance content if it exists yet (`08-compliance.md` standalone, `12-Compliance.md` in kit mode).
+The read-back is the proof. Asking for an Instagram caption on top of it adds minutes to a block that is already tight and produces something nobody asked for. Krista and Hailey both called it out on 2026-08-26: *"We do not want to ask for an Instagram caption. It's a waste of time while we're building our brain."*
 
 ### ATTRIBUTION BEAT 4
 
@@ -574,25 +570,27 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 # PHASE 2 HANDOFF (standalone only, skip entirely in kit mode)
 
-The build is done. Ask ONE question, and only after the close above has landed.
+## How Day 1 ends, and it is not with a question
 
-**In LIVE mode at an event, do not ask this at all.** On Day 1 nobody has bought anything, because the offer has not been made yet. Asking reads as a sales question landing on somebody who just did ninety minutes of work. Go straight to the free-version close below. Hailey, 2026-08-25: *"We need to assume that this is just day one free Business Brain Day. We're not on the full operating system part yet."*
+**Never ask whether they bought.** Not in LIVE mode, not in FULL mode, not in any wording.
 
-**In FULL mode, working alone, ask it**, because somebody doing this at home may well have already bought:
+Krista and Hailey, 2026-08-26, after watching it fire on a tester: *"We should not ask them whether they joined or not. We should just say, make sure you stay involved for the next couple of days for the next steps instead, because everyone's gonna say free. No one's gonna say they joined, because they're not gonna wanna pay."*
 
-> "Last thing. Did you join the full Operating System, or are you here on the free Business Brain?"
+The question cannot produce a useful answer. On Day 1 the offer has not been made, so everybody answers free and the question has cost you a beat and made somebody feel sold to right after ninety minutes of work.
 
-Give them a clean either/or. Do not phrase it so that "no" sounds like the wrong answer. Most of the room has not bought anything, and at an event the offer usually has not even been made yet when they build this.
+Close like this and stop:
 
-**If they are on the free version, have not bought, or are not sure:** say this, then stop.
-
-> "Perfect. You have everything you came for and it is yours.
+> "That is your Business Brain, and it is yours. Nothing in there is rented and nothing is locked in somebody's app.
 >
-> If you do join the Operating System later, come straight back to this folder, open it in Claude, and say: **start phase two**. I will install the whole thing and carry every one of these answers over. You will not answer a single one of these questions twice."
+> Stay close over the next couple of days. There are next steps coming and you will not want to miss them."
 
-That second paragraph is the important one and it is not a pitch, it is the instruction for how they get back in. Say it even if they seem uninterested. Then stop. Do not describe the Operating System, do not price it, do not ask again. The folder they are holding is the argument.
+Then stop. Do not describe the Operating System, do not price it, do not hint. The folder they are holding is the argument.
 
-**If they say they bought it:** run everything below. You are now installing their paid system, and you do the whole thing. They should never have to be told where to click by a human.
+## When Phase 2 actually runs
+
+Phase 2 runs on a different day, for people who have bought and who have already been added to the repository. It never runs on Day 1.
+
+They reach it by typing `start phase two`, `I bought it`, `I joined`, `I'm a paid student`, or `install my operating system` in this same folder. When one of those arrives, run everything below.
 
 ## Ground rules for Phase 2
 
@@ -634,39 +632,33 @@ Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operatin
 
 **Ask, do not infer.** The profession they gave you in Step 0 is a hint and nothing more. People buy the one that fits the work they are about to do, which is not always the work they described. If they are not sure, ask what they are planning to use it for and take their answer. If they still do not know, tell them to check with the person who sold it to them, and wait.
 
-## P2.2. Do they have GitHub
+## P2.2. They should already have GitHub and already be added
 
-> "Do you already have a GitHub account?"
+**Do not walk anybody through creating a GitHub account.** That moved out of this skill on 2026-08-26.
 
-**If yes,** ask for the username, read it back to confirm the spelling, and go to P2.3.
+Why it moved, and it is a real constraint rather than a preference. Jerry Vohrer, working the automation with Hailey: *"they need a GitHub in order to be invited to the operating system to start the process, so this needs to come before that."* A person cannot be invited to a private repository until their account exists, so the account has to be created before the install, not during it. Hailey's decision on the call: *"we'll just take it out of Phase 2, of walking them through it."*
 
-**If no, or they are not sure,** walk them through it. One instruction at a time, waiting after each. Do not paste the whole list at them.
+What happens instead: after somebody buys, they fill in a short form that collects their GitHub username and whether they are an agent. The form carries a sign-up link for anybody without an account. An automation checks their purchase in GoHighLevel and only then adds them to the right repository.
 
-1. Open a browser and go to `github.com`
-2. Click **Sign up**, top right
-3. Enter their email address
-4. Create a password. Tell them to save it in their password manager or write it down, because they will need it again
-5. Pick a username. Tell them it will be visible, so something simple and professional, their name plus a number is fine, and no spaces
-6. Solve the puzzle it shows, which is just proving they are a person
-7. Click **Create account**
-8. Go to their email, find the code GitHub just sent, and enter it
-9. If it asks about team size or what they plan to use it for, tell them to skip it or pick anything, it changes nothing
+So by the time Phase 2 runs, they have an account and an invitation. **Your job is to confirm that, not to create it.**
 
-Then ask for the exact username and **read it back to them character by character.** A wrong username is the single most common reason this stalls, because the invitation goes to a stranger and they sit waiting for an email that is never coming.
+Ask one question:
 
-## P2.3. Get them added
+> "Have you filled in the access form and accepted the GitHub invitation email?"
 
-Say this, filling in their real username:
+Use **AskUserQuestion**: `Yes, all done`, `I filled the form but no email yet`, `I haven't done the form`.
 
-> "Your username is `[username]`. One email and you're in.
+- **All done:** go to P2.4 and verify it for real.
+- **Form done, no email:** it is usually in spam. Have them look. If it genuinely is not there, the automation has not run or the purchase has not matched, and that is for a human on Krista's team. Say so plainly and stop rather than improvising.
+- **Form not done:** give them the form and wait. Do not offer to walk them through GitHub instead.
+
+> "You need the access form first. It takes about a minute and it is what gets you added.
 >
-> Send it to **socialmedia@kristamashore.com** with the subject line **GitHub username for my Operating System**. Put the username in the body and nothing else.
+> [ACCESS FORM LINK]
 >
-> They add you, GitHub emails you an invitation, and you click Accept. Check your spam folder, GitHub invitations land there constantly."
+> Come back and tell me once you have accepted the invitation email."
 
-**Never tell them to hand the username to whoever is helping in the room.** Hailey, 2026-08-25: *"That's going to be so chaotic."* A hundred people looking for a person to say a username to does not scale. One address, one subject line, one line in the body, and it can be collected and actioned in a batch.
-
-Then **stop and wait.** Do not continue until they say they have accepted.
+**The form link is not live yet.** Jerry is building it in GoHighLevel as of 2026-08-26. Until it exists, and only until then, fall back to: email the username to socialmedia@kristamashore.com with the subject `GitHub username for my Operating System`. Replace this block with the real link the moment it ships.
 
 ## P2.4. Verify it actually took
 
