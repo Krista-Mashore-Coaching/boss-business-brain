@@ -192,6 +192,6 @@ If they read it back and it could describe anybody else in their market, it is w
 
 ## Composition
 
-- `avatar-and-positioning-engine.md` — the avatar comes first and this reads from it. Phase 2 of that engine covers the differentiation audit, the three value propositions and the positioning set. This file covers the system name, the psychology, the messaging and the power statements. Run the avatar first, then this.
-- `human-writing-enforcement.md` — the style rules, in full.
-- `profession-lanes.md` — which process shape to use for agent, lender or general.
+- `avatar-and-positioning-engine.md`: the avatar comes first and this reads from it. Phase 2 of that engine covers the differentiation audit, the three value propositions and the positioning set. This file covers the system name, the psychology, the messaging and the power statements. Run the avatar first, then this.
+- `human-writing-enforcement.md`: the style rules, in full.
+- `profession-lanes.md`: which process shape to use for agent, lender or general.

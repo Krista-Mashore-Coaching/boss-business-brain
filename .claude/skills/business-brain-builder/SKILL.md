@@ -31,7 +31,7 @@ The brain is the foundation layer. It is who they are, how they talk, who they s
 6. **Sixth grade reading level** in everything you write into their files.
 7. **Ten files, exactly ten.** Never add, split, or merge one.
 8. **No em dashes anywhere.** Not in your speech, not in their files.
-9. **Multiple choice means the AskUserQuestion tool, never a code block.** This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. Hailey, testing it 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
+9. **Multiple choice means the AskUserQuestion tool, never a code block.** This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. A tester, 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
 
    **Use the AskUserQuestion tool.** It renders real clickable options and answering is one click. Its rules, which shape how you write the options:
 
@@ -40,7 +40,7 @@ The brain is the foundation layer. It is who they are, how they talk, who they s
    - Give each option a short label and a one-line description, because the description is where you make the choice feel understood rather than generic.
    - Use it for anything with a small set of predictable answers. Use plain open questions for anything where the answer is genuinely theirs to invent: their name, their stories, their market.
 
-10. **Never re-ask what they have already told you, in any form.** Before every question, read back over what they have said this session and what is already in their files. If the answer is there, say it back and ask them to confirm rather than asking fresh. Hailey hit this at the avatar step: *"I feel like he already asked me this about women going through divorce."* She had described her client during the voice questions and got asked again twenty minutes later. Confirming takes five seconds. Re-asking makes them wonder whether anything they said was heard.
+10. **Never re-ask what they have already told you, in any form.** Before every question, read back over what they have said this session and what is already in their files. If the answer is there, say it back and ask them to confirm rather than asking fresh. A tester hit this at the avatar step: *"I feel like he already asked me this about women going through divorce."* They had described their client during the voice questions and got asked again twenty minutes later. Confirming takes five seconds. Re-asking makes them wonder whether anything they said was heard.
 
 11. **Never produce content nobody asked for.** During the interview you are building files, not writing posts. If an answer sparks an idea, note it in the file and keep going. The one exception is the read-back at the very end, where writing a caption IS the demonstration and is meant to happen.
 
@@ -71,7 +71,7 @@ Budget, and say the budget out loud at the start so nobody panics:
 
 Files 06 through 10 are finished later, solo. Tell them that up front so the stopping point feels planned rather than rushed.
 
-**Offer voice dictation before you start.** Hailey's suggestion, 2026-08-25, and it is a good one for a room full of people who talk faster than they type:
+**Offer voice dictation before you start.** A tester's suggestion, 2026-08-25, and it is a good one for a room full of people who talk faster than they type:
 
 > "One thing that makes this much faster if you want it: any voice dictation tool lets you talk your answers instead of typing them. Mac has one built in, hold the microphone key. Skip it if you'd rather type."
 
@@ -178,7 +178,27 @@ Use that folder name for the rest of the session. Never call it "My Brain" or an
 
 **If `KIT_MODE = true`, read `references/kit-brand-system-mapping.md` now.** It tells you exactly which existing Brand-System file and section each of the ten files below writes into instead of its own standalone file, and which sections in those files are inherited and must never be touched. The ten questions, their order, and every rule in this skill stay identical - only the write destination changes. Do not tell the student about "kit mode" by name; just write into the right place.
 
+# STEP 0.6. Did they already build one? (kit mode only)
+
+**Skip this entire step unless `KIT_MODE = true`.** In standalone mode there is nothing to migrate into.
+
+Someone who bought the full Operating System may have already built their Business Brain free, at an event, before they purchased. Their ten foundations already exist, full of their own answers, sitting in a folder on the same machine.
+
+**If that is the case, they do not get asked those questions again.** Not one of them. Being re-interviewed on day one of a paid product teaches them their work does not carry, which is worse than any bug.
+
+Before asking anything, look for a folder containing at least three of the ten numbered foundation files (`01-identity-and-positioning.md` through `10-best-content.md`). Search `~/Sites`, `~/Desktop`, `~/Downloads`, `~/Documents`, `~` **and the OneDrive equivalents** `~/OneDrive`, `~/OneDrive/Desktop`, `~/OneDrive/Documents`, `~/OneDrive/Downloads`, to a depth of **5**. The OneDrive paths are required on Windows, not a nicety: with OneDrive backup on, which is the default on most consumer machines, the real Desktop is `OneDrive\Desktop` and plain `~/Desktop` is empty or absent. A real student's brain was found at `C:\Users\<username>\OneDrive\Desktop\BOSS AI OS\BOSS-AI-Business-Brain` on 2026-08-24, which is five levels deep and invisible to any search that skips OneDrive. Depth 3, not 2, because the folder instruction was dropped on 2026-08-24 and people now unzip wherever the download landed, including one folder deeper than the search root (`~/Downloads/Vegas/BOSS-AI-Business-Brain/`). Depth 2 finds the common case and misses that one. The default folder name from the public download is `boss-business-brain-main`, but people rename it, so never match on the name alone. Never search inside the kit you are installing into, or any Krista-OS folder: those hold templates and examples that would match the pattern and are not the student's answers.
+
+**Found nothing?** Say nothing about it and go straight to Step 0.75. Most paid students never attended an event, and announcing a failed search is noise.
+
+**Found something?** Read `references/upgrade-migration.md` now and follow it exactly. In short: confirm it is theirs by quoting one real detail out of it, grade each of the ten as REAL, THIN or EMPTY, migrate the REAL ones into the Brand-System destinations from `references/kit-brand-system-mapping.md` without ever touching an inherited section, then interview only for what is thin or missing.
+
+Never migrate on a filename match alone, and never report a foundation as carried without reading its destination file back to confirm the content actually landed.
+
 # STEP 0.75. Existing material (optional, saves them real time)
+
+**If Step 0.6 migrated an existing Business Brain, say so first**, so this question does not read as though you ignored what they already did:
+
+> "I've already got [N] of your ten foundations from the Brain you built. For the [N] we still need, same question as always:"
 
 Ask once, before the first real question:
 
@@ -273,7 +293,7 @@ The avatar takes three questions. The differentiator takes three more, and each 
 
 > "You already told me who you serve: [their actual words]. Have I got that right?"
 
-Hailey hit exactly this on 2026-08-25 and it is the fastest way to lose somebody's confidence: *"I feel like he already asked me this about women going through divorce, scared and overwhelmed about starting over with kids."* She had said it twenty minutes earlier.
+A tester hit exactly this on 2026-08-25 and it is the fastest way to lose somebody's confidence: *"I feel like he already asked me this about women going through divorce, scared and overwhelmed about starting over with kids."* They had said it twenty minutes earlier.
 
 Then ask only what is genuinely still missing, one at a time:
 
@@ -468,7 +488,7 @@ Answer from their files. In their voice. Their market, their differentiator, the
 
 **Stop there. Do not ask them to write a social post.**
 
-The read-back is the proof. Asking for an Instagram caption on top of it adds minutes to a block that is already tight and produces something nobody asked for. Krista and Hailey both called it out on 2026-08-26: *"We do not want to ask for an Instagram caption. It's a waste of time while we're building our brain."*
+The read-back is the proof. Asking for an Instagram caption on top of it adds minutes to a block that is already tight and produces something nobody asked for. Krista and a tester both called it out on 2026-08-26: *"We do not want to ask for an Instagram caption. It's a waste of time while we're building our brain."*
 
 ### ATTRIBUTION BEAT 4
 
@@ -549,7 +569,7 @@ Then list the eleven filenames so they can check their own folder against it.
 
 **Kit mode:**
 
-> "Open `11-Brand-System/`. Your Brand-System files are filled in now, not templates anymore - and every skill in your kit, from your daily emails to your ad copy, already reads straight from that folder. Nothing else to wire up."
+> "Open `<KIT_ROOT>/11-Brand-System/`. Your Brand-System files are filled in now, not templates anymore - and every skill in your kit, from your daily emails to your ad copy, already reads straight from that folder. Nothing else to wire up."
 
 Then list what was filled per the mapping reference, plus the three new files (`11-My-Stories.md`, `12-Compliance.md`, `13-AI-Context.md`), so they can check their own kit against it.
 
@@ -570,11 +590,54 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 # PHASE 2 HANDOFF (standalone only, skip entirely in kit mode)
 
+## Before the close: the free GitHub account
+
+**This moved INTO Day 1 on 2026-08-30, at Krista's direction.** It used to sit in Phase 2 and it was the slowest step of the Day 3 install, about five minutes each across a whole room, inside the tightest block of the event. A GitHub account is free, empty, and gives nothing away, so it costs nothing to create it on Day 1 and it buys back the block on Day 3.
+
+**Frame it as finishing the free thing. Never as a step toward buying.** On Day 1 the offer has not been made. Do not mention the Operating System, a repository, an invitation, or anything coming next.
+
+Say:
+
+> "One last thing, about two minutes, so nothing you built today can get lost.
+>
+> Do you already have a GitHub account?"
+
+Use **AskUserQuestion**: `Yes`, `No`, `Not sure`.
+
+**If yes:** ask for the username, read it back to confirm the spelling, and write it to their folder.
+
+**If no or not sure:** walk them through it, ONE instruction at a time, waiting after each:
+
+  a. Open a browser and go to `github.com`
+  b. Click **Sign up**, top right
+  c. Enter their email address
+  d. Create a password. Tell them to use a password manager or write it somewhere safe, because they will need it again
+  e. Pick a username. Tell them it will be visible, so keep it simple and professional, their name plus a number is fine, and it cannot have spaces
+  f. Answer the puzzle that proves they are human
+  g. Click **Create account**
+  h. Go to their email, find the code GitHub sent, enter it
+  i. If it asks about team size or what they want to use it for, they can skip or pick anything
+
+**Never ask them for their password and never type it for them.** They enter it themselves.
+
+When they are done, ask for the exact username and **read it back to confirm the spelling.**
+
+Then write it into their folder so nobody has to remember it days later:
+
+- Standalone: append to `01-identity-and-positioning.md` under a `## Accounts` heading, as `GitHub username: <username>`
+- If that file does not exist yet because they stopped early, write `GitHub username: <username>` into a new `00-accounts.md` in the same folder rather than skipping it
+
+Confirm in one line and move to the close:
+
+> "Saved. That is in your folder now, so you do not have to remember it."
+
+**If they refuse or cannot finish it, let it go and close normally.** It is a convenience, not a gate, and pushing somebody at the end of ninety minutes costs more than it saves.
+
 ## How Day 1 ends, and it is not with a question
 
 **Never ask whether they bought.** Not in LIVE mode, not in FULL mode, not in any wording.
 
-Krista and Hailey, 2026-08-26, after watching it fire on a tester: *"We should not ask them whether they joined or not. We should just say, make sure you stay involved for the next couple of days for the next steps instead, because everyone's gonna say free. No one's gonna say they joined, because they're not gonna wanna pay."*
+Krista and a tester, 2026-08-26, after watching it fire on a live run: *"We should not ask them whether they joined or not. We should just say, make sure you stay involved for the next couple of days for the next steps instead, because everyone's gonna say free. No one's gonna say they joined, because they're not gonna wanna pay."*
 
 The question cannot produce a useful answer. On Day 1 the offer has not been made, so everybody answers free and the question has cost you a beat and made somebody feel sold to right after ninety minutes of work.
 
@@ -634,31 +697,37 @@ Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operatin
 
 ## P2.2. They should already have GitHub and already be added
 
-**Do not walk anybody through creating a GitHub account.** That moved out of this skill on 2026-08-26.
+**Do not walk anybody through creating a GitHub account here.** Account creation moved out of Phase 2 on 2026-08-26, and on 2026-08-30 it moved to the END OF PHASE 1 in this same skill, so by the time somebody reaches Phase 2 they made the account on Day 1 and the username is already saved in their folder. Read it back to them rather than asking them to remember it.
 
-Why it moved, and it is a real constraint rather than a preference. Jerry Vohrer, working the automation with Hailey: *"they need a GitHub in order to be invited to the operating system to start the process, so this needs to come before that."* A person cannot be invited to a private repository until their account exists, so the account has to be created before the install, not during it. Hailey's decision on the call: *"we'll just take it out of Phase 2, of walking them through it."*
+Why it moved, and it is a real constraint rather than a preference. The automation lead, working the automation with the tester: *"they need a GitHub in order to be invited to the operating system to start the process, so this needs to come before that."* A person cannot be invited to a private repository until their account exists, so the account has to be created before the install, not during it. The tester's decision on the call: *"we'll just take it out of Phase 2, of walking them through it."*
 
-What happens instead: after somebody buys, they fill in a short form that collects their GitHub username and whether they are an agent. The form carries a sign-up link for anybody without an account. An automation checks their purchase in GoHighLevel and only then adds them to the right repository.
+What happens instead: after they sign the contract and make the down payment, they go to the back table, scan the code there, and fill in a short form that collects their GitHub username and whether they are Agent/Lender or Other. The form carries a sign-up link for anybody without an account. **The automation checks for the SIGNED CONTRACT** and only then adds them to the right repository.
+
+**The invite lands in their GitHub account, not their inbox, and they do not have to accept it before reaching you.** GitHub usually emails as well and that email often lands in spam, but the email is not the delivery. Never send somebody hunting through spam as the first move. Accepting during setup is normal and expected (Run Sheet v2, Stage 3 and Stage 4).
 
 So by the time Phase 2 runs, they have an account and an invitation. **Your job is to confirm that, not to create it.**
 
 Ask one question:
 
-> "Have you filled in the access form and accepted the GitHub invitation email?"
+> "Have you submitted the access form at the back table?"
 
-Use **AskUserQuestion**: `Yes, all done`, `I filled the form but no email yet`, `I haven't done the form`.
+Use **AskUserQuestion**: `Yes, submitted`, `Yes, but I'm not sure it worked`, `Not yet`.
 
-- **All done:** go to P2.4 and verify it for real.
-- **Form done, no email:** it is usually in spam. Have them look. If it genuinely is not there, the automation has not run or the purchase has not matched, and that is for a human on Krista's team. Say so plainly and stop rather than improvising.
-- **Form not done:** give them the form and wait. Do not offer to walk them through GitHub instead.
+- **Submitted:** go to P2.4 and verify the access for real. Do not ask whether they accepted an email first. If P2.4 shows they are not in yet, THEN walk them through accepting: sign in at github.com, open notifications, accept the invitation there.
+- **Not sure it worked:** treat it the same as submitted and let P2.4 answer it. Verification beats asking.
+- **Not yet:** give them the form and wait. Do not offer to walk them through GitHub instead. If they have not signed the contract yet, the form cannot help them and the answer is the back table, not you.
 
 > "You need the access form first. It takes about a minute and it is what gets you added.
 >
-> [ACCESS FORM LINK]
+> https://app.kristamashore.com/widget/form/NNOpbbKXQV9eKpPM2eXE
 >
 > Come back and tell me once you have accepted the invitation email."
 
-**The form link is not live yet.** Jerry is building it in GoHighLevel as of 2026-08-26. Until it exists, and only until then, fall back to: email the username to socialmedia@kristamashore.com with the subject `GitHub username for my Operating System`. Replace this block with the real link the moment it ships.
+**The form and the purchase check are LIVE as of 2026-08-30** (Krista confirmed in chat). The automation reads their GoHighLevel purchase and only then adds them to the right repository, so a non-buyer who reaches the form does not get access.
+
+> **LIVE, verified 2026-08-30.** The form above is the real GoHighLevel access form, built by Jerry and sent 2026-08-27. Confirmed by opening it: it is titled "Sign Up To Receive Your B.O.S.S." and collects Full Name, GitHub Username, Phone, Email, and whether they are an agent or lender. This is the PAID Phase 2 form and it is contract-gated, so it is handed to buyers at the back table only, never shown to the room. Fallback if it is ever down: email the username to socialmedia@kristamashore.com with the subject `GitHub username for my Operating System`.
+
+**Never improvise around the purchase check.** If somebody's purchase has not matched, that is a human on Krista's team, not something to route around. Say so plainly and stop.
 
 ## P2.4. Verify it actually took
 
@@ -669,10 +738,10 @@ gh repo view <THE REPO FROM P2.1>
 ```
 
 - Repo details come back: they are in, continue.
-- 404 or not found: the invitation has not gone through, or they accepted it while signed into a different GitHub account. Ask which account they were signed into. Then wait. Do not look for another way in.
+- 404 or not found: they have not accepted the invitation yet (most likely, since accepting here is normal), or they accepted while signed into a different GitHub account. First have them sign in at github.com, open notifications, and accept. If it is still 404, ask which account they were signed into. Then wait. Do not look for another way in.
 
 
-**Windows: quitting Claude means quitting from the system tray.** Closing the window leaves it running, so anything that needed a restart still will not work. Tell them: find the Claude icon in the system tray, the small icons at the bottom right near the clock, right-click it and choose Quit, watch it disappear, then reopen. Hailey did not know this and neither will most of the room.
+**Windows: quitting Claude means quitting from the system tray.** Closing the window leaves it running, so anything that needed a restart still will not work. Tell them: find the Claude icon in the system tray, the small icons at the bottom right near the clock, right-click it and choose Quit, watch it disappear, then reopen. A live tester did not know this and neither will most of the room.
 
 ## P2.5. Install the tool that downloads it
 
@@ -683,7 +752,7 @@ Work out whether they are on Mac or Windows first, and use the right commands. D
    - **Mac:** `brew install gh`. If Homebrew is missing, send them to `brew.sh` first and wait.
    - **Windows:** `winget install --id GitHub.cli`.
 
-**Windows, choosing the right Git download.** The download page offers more than one build and the wrong one fails confusingly. **Almost everybody needs the 64-bit Standalone Installer, which covers both Intel and AMD.** ARM64 is only for ARM devices, which is rare. If they are not sure, have them open Settings, System, About and read the processor line. Rob picked the wrong one himself on this exact page. Then have them close and reopen the terminal, or `gh` will not be found yet.
+**Windows, choosing the right Git download.** The download page offers more than one build and the wrong one fails confusingly. **Almost everybody needs the 64-bit Standalone Installer, which covers both Intel and AMD.** ARM64 is only for ARM devices, which is rare. If they are not sure, have them open Settings, System, About and read the processor line. A live tester picked the wrong one on this exact page. Then have them close and reopen the terminal, or `gh` will not be found yet.
 3. Check whether they are signed in: `gh auth status`
 4. If not signed in:
    ```
@@ -736,7 +805,7 @@ Give them the path as a tappable block, because they need to paste it into the f
 [the full path to the cloned kit]
 ```
 
-Then walk them there click by click. **Do not say "point Claude at the new folder."** Hailey, 2026-08-25: *"everyone's gonna be like, what do you mean, point at that new folder? How are they gonna know what that looks like? We need very specific instructions."*
+Then walk them there click by click. **Do not say "point Claude at the new folder."** A tester, 2026-08-25: *"everyone's gonna be like, what do you mean, point at that new folder? How are they gonna know what that looks like? We need very specific instructions."*
 
 Say this, adjusted to what is actually on their screen:
 
@@ -759,6 +828,6 @@ If they ask why a new session rather than this one: this folder holds one skill,
 
 - **Never invent facts.** No made-up stats, market data, or client results. If a number matters and was not provided, write `[VERIFY: number]`.
 - **No third-party names.** No guru, competitor, or source-author names in any output, ever.
-- **Never read any folder marked confidential or private.**
+- **Never read `14-Confidential/`.**
 - **One brain at a time.** Depth beats breadth.
-- **Log the run** (if the operating system has an operations log): output folder and files written go to `_Operations-Log.md` standalone, or `<KIT_ROOT>/_Operations-Log.md` in kit mode - which Brand-System sections got filled, and the three new files created.
+- **Log the run.** In Krista's own vault: output folder and files written go to `_Operations-Log.md`. In kit mode: the same, to `<KIT_ROOT>/_Operations-Log.md` (the student's own copy of that file) - which Brand-System sections got filled, and the three new files created. Standalone (no kit, no vault): skip logging.
