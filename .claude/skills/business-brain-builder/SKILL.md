@@ -506,7 +506,7 @@ The read-back is the proof. Asking for an Instagram caption on top of it adds mi
 
 ### ATTRIBUTION BEAT 4
 
-> "That caption used your story, your voice, your client, and your rules. Nobody else on earth can generate that, because nobody else has that folder.
+> "That answer used your story, your voice, your client, and your rules. Nobody else on earth can generate that, because nobody else has that folder.
 >
 > Krista built this whole sequence so that the last thing you did today wasn't answering questions. It was watching your own brain work.
 >
@@ -572,6 +572,16 @@ Say which skill you're about to run and why, then actually run it against their 
 Produce the real output. This is the moment they see the system solve something they actually brought in the door, not something Krista or an AI invented for them.
 
 # CLOSE
+
+**Read this first: the ending runs in a fixed order, and the pieces are not all in this section.**
+
+1. **The read-back.** They type the prompt themselves and watch their own folder answer. This is the proof.
+2. **The eleventh file**, the portable one they can paste into any AI.
+3. **The GitHub account**, two minutes, standalone only. It is written below under PHASE 2 HANDOFF, but it happens HERE, before any closing words. The heading there says "Before the close" and it means it.
+4. **The folder inventory**, immediately below, so they can check their own folder against the list.
+5. **The last words**, once, from "How Day 1 ends" below. Standalone LIVE mode ends on those words and nothing follows them.
+
+**Never close twice.** The inventory in this section is not the ending, it is the receipt. The ending is step 5. Somebody reading this file top to bottom will hit the inventory first and the last words two sections later, so hold the ending until the GitHub step is done.
 
 **Standalone:**
 
