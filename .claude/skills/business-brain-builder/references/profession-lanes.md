@@ -28,6 +28,8 @@ lane. Never guess.
 
 ## FILE 01: Identity and positioning
 
+**Every question in this file that has predictable answers is an AskUserQuestion with real options and an escape hatch, per hard rule 9 in the skill.** Only their own numbers, their own names, and their own stories get typed.
+
 The four base questions from the main playbook stay the same. The proof
 question changes by lane, because "what have you done that you're proud of"
 means a different metric in each one.
@@ -36,8 +38,10 @@ means a different metric in each one.
 
 1. "How many homes have you sold, and over how many years?"
 2. "What's your market area, the actual neighborhoods or towns you work?"
-3. "Do you hold any designations, things like CNE, CRS, GRI, or ABR?" If
-   they say no, do not push. Say: "That's fine, plenty of strong agents
+3. "Do you hold any designations?" **AskUserQuestion**, `multiSelect: true`:
+   `CNE`, `CRS`, `GRI`, `ABR`, and the tool's own escape for anything else.
+   Add a `None of these` option so saying no is one tap, not a sentence.
+   If they say no, do not push. Say: "That's fine, plenty of strong agents
    don't carry a designation. We'll build your proof around your numbers
    and your track record instead."
 
@@ -46,17 +50,21 @@ means a different metric in each one.
 1. "How many loans have you closed, and over how many years?"
 2. "What's your NMLS number?" This is a compliance-critical field for File
    08 as well as a proof point here. Do not skip it.
-3. "What loan types do you specialize in? Conventional, FHA, VA, jumbo,
-   first-time buyer programs, something else?"
-4. "What states are you licensed in?"
+3. "What loan types do you specialize in?" **AskUserQuestion**,
+   `multiSelect: true`: `Conventional`, `FHA and VA`, `Jumbo`,
+   `First-time buyer programs`.
+4. "What states are you licensed in?" **AskUserQuestion** for the shape
+   first: `Just one state`, `Two or three`, `Four or more`. Then take the
+   actual names in one open answer.
 
 ### GENERAL lane
 
 1. "How many clients have you served, and over how many years?"
 2. "What results do you actually deliver? Be specific if you can, numbers,
    outcomes, before-and-after."
-3. "Do you hold any credentials or certifications in your field?" If they
-   say no, treat it the same as the agent lane: reassure them, then build
+3. "Do you hold any credentials or certifications in your field?"
+   **AskUserQuestion**: `Yes, formal ones`, `Yes, but industry-specific`,
+   `No, my results are the credential`. If they say no, treat it the same as the agent lane: reassure them, then build
    proof around what they have actually done instead of a credential they
    do not have.
 
@@ -171,8 +179,9 @@ File 01 already recorded their market. Confirm it, do not ask again. What
 Confirm: "You told me your market area is [X]. Is that still right, or has
 it changed?" Then ask, one at a time:
 
-1. "What price ranges and property types do you mostly work? Starter
-   homes, luxury, condos, land, something else?"
+1. "What price ranges and property types do you mostly work?"
+   **AskUserQuestion**, `multiSelect: true`: `Starter homes`,
+   `Move-up family homes`, `Luxury`, `Condos and townhomes`, `Land`.
 2. "Who are the two or three agents you lose listings to most often, and
    what do they do well?"
 
@@ -181,7 +190,9 @@ it changed?" Then ask, one at a time:
 Confirm: "You told me you're licensed in [X states]. Is that still
 accurate?" Then ask, one at a time:
 
-1. "What loan products do you focus on most?"
+1. "What loan products do you focus on most?" **AskUserQuestion**,
+   `multiSelect: true`, reusing the loan-type options above so they are
+   not answering the same question twice in different words.
 2. "Who are the two or three lenders or banks you lose deals to most
    often, and what do they do well?"
 
@@ -191,6 +202,8 @@ Confirm: "You told me your market is [X]. For your field, is that a
 geography, a niche, or both?" Then ask, one at a time:
 
 1. "Do you work in tiers or packages, or is it one offer for everyone?"
+   **AskUserQuestion**: `Tiers or packages`, `One offer for everyone`,
+   `Custom every time`.
 2. "Who are the two or three competitors you lose deals to most often, and
    what do they do well?"
 

@@ -31,7 +31,7 @@ The brain is the foundation layer. It is who they are, how they talk, who they s
 6. **Sixth grade reading level** in everything you write into their files.
 7. **Ten files, exactly ten.** Never add, split, or merge one.
 8. **No em dashes anywhere.** Not in your speech, not in their files.
-9. **Multiple choice means the AskUserQuestion tool, never a code block.** This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. A tester, 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
+9. **EVERY question with a predictable answer is multiple choice, in every file, in both phases, and multiple choice means the AskUserQuestion tool, never a code block.** Krista, 2026-08-24, watching somebody type answers on a laptop balanced on their knees: *"Every time the user is requested to type something on their own, it should be a clickable element that they just tap."* And a minute later: *"So these should be buttons, all these questions."* All of them. Not the first two files. If you are about to ask something and you can name three or four answers most people would give, it is an AskUserQuestion with those answers and an escape hatch. The only things they should ever type are their own name, their own numbers, and their own stories. This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. A tester, 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
 
    **Use the AskUserQuestion tool.** It renders real clickable options and answering is one click. Its rules, which shape how you write the options:
 
@@ -222,7 +222,7 @@ Ask one at a time (lane-specific wording in `references/profession-lanes.md`):
 
 1. Name and business name. Free text, obviously.
 2. "How long have you been doing this?" **AskUserQuestion**, four options: `Under 2 years`, `2 to 5 years`, `5 to 10 years`, `10 years or more`. The tool adds Other on its own.
-3. Where do you work? Towns, neighbourhoods, or the market you cover.
+3. "Where do you work?" **AskUserQuestion** first, so they are picking a shape rather than composing a sentence: `One town or city`, `A few towns near each other`, `A whole county or region`, `Specific neighbourhoods`. Then one open follow-up to get the actual names. The names have to be theirs, but the shape does not.
 4. "What have you actually done that you're proud of?" Most people go blank here, so **AskUserQuestion** with four doorways: `Volume` (deals, clients, or years of them), `A specific result` (something you got one person), `Recognition` (awards, rankings, press), `Staying power` (how long you have lasted and why).
 
    Whatever they pick, follow with one open question to get the actual detail. The choice is a doorway, not the answer.
@@ -297,9 +297,11 @@ A tester hit exactly this on 2026-08-25 and it is the fastest way to lose somebo
 
 Then ask only what is genuinely still missing, one at a time:
 
-1. "Who do you serve? Be as specific as you can, and include what kind of shape they are usually in when they come to you."
-2. "And what do you actually do for them? Not your job title. The thing they get."
-3. "Finish this sentence: I specialize in helping ______ solve ______."
+1. "Who do you serve?" **AskUserQuestion**, `multiSelect: true`, options drawn from their lane in `references/profession-lanes.md`. For AGENT that is `First-time buyers`, `Move-up families`, `Downsizers and seniors`, `Investors`. For LENDER, `First-time borrowers`, `Move-up and jumbo`, `Refinance`, `Self-employed and hard-to-qualify`. For GENERAL, `People just starting out`, `People stuck and plateaued`, `Established and scaling`, `A specific industry or niche`. Then ONE open follow-up, and only one: *"What kind of shape are they usually in when they come to you?"*
+
+2. "What do you actually do for them?" **AskUserQuestion**, `multiSelect: true`. Not their job title, the thing the client walks away with: `I get them a result they could not get alone`, `I take the stress and the guesswork off them`, `I get it done faster or for more money`, `I teach them so they can do it themselves`.
+
+3. **Do not ask question three.** Write the "I specialize in helping ___ solve ___" line yourself out of their answers to one and two, show it, and ask **AskUserQuestion**: `That is it`, `Close, let me adjust it`. Making somebody compose a fill-in-the-blank sentence out loud is the slowest question in the whole interview and you already have both halves.
 
 Then offer two optional lifts together, and never push: anything they would call their unique mechanism, and a website or landing page you can read.
 
@@ -307,18 +309,9 @@ Then offer two optional lifts together, and never push: anything they would call
 
 > "Do you serve more than one kind of client? Plenty of people do."
 
-```
-just the one
-```
-```
-I have two
-```
-```
-I have three or more
-```
-```
-let me explain
-```
+**AskUserQuestion**: `Just the one`, `I have two`, `I have three or more`, `Let me explain`.
+
+This one was shipping as four fenced code blocks, which is exactly what hard rule 9 bans. A code block renders as a copy icon, not a button. Fixed 2026-08-31.
 
 If more than one, run the three questions again for each, and **generate a complete profile for every one of them.** Each gets its own labeled section inside the same file. Do not merge them into an average client, which is the fastest way to produce something that speaks to nobody. Krista's instruction 2026-08-25: *"they may have more than one client avatar, so you need to ask them if they have more than one avatar and do it for all their avatars."*
 
@@ -326,7 +319,7 @@ The positioning set is built once, from the primary avatar, unless they say the 
 
 **Then generate, do not keep asking.** Build the full ideal client profile across all seven areas, then build the positioning set out of it: differentiation audit, three value propositions, the named mechanism, and the whole positioning set from authority statement through long bio. Generate the messaging pillars and the ten objections at the same time and hold them, because that is what makes files 10 and 11 fast later.
 
-Show the avatar in full, then the positioning, then ask **one** question: "Anything in there wrong?" Offer `nothing, that's right` and `one thing is off` as things they tap. Fix what they name. Move on.
+Show the avatar in full, then the positioning, then ask **one** question with **AskUserQuestion**: "Anything in there wrong?" Options: `Nothing, that is right`, `One thing is off`. Fix what they name. Move on.
 
 **Do not walk them through it section by section asking for approval.** One pass, one question.
 
@@ -338,9 +331,11 @@ Show the avatar in full, then the positioning, then ask **one** question: "Anyth
 
 Three questions, each doing the work of four:
 
-1. "Walk me through exactly how you handle a client from start to finish. Focus on what you do differently that changes exposure, speed or price."
-2. "What do you do better than most people in your field, or what do you control in the process that others don't?"
-3. "When somebody chooses you, what actually happens differently compared to a typical experience?"
+1. "Walk me through how you handle a client from start to finish." Open the door with **AskUserQuestion** before they talk, so they know which part you want: `Marketing and getting attention`, `The process once they hire me`, `Negotiation and getting the number`, `What happens after the deal closes`. Whatever they tap, THEN let them describe that part in their own words. This is the one place in the interview where a real answer has to be spoken, and the choice makes it a small answer instead of a blank page.
+
+2. "What do you do better than most people in your field?" **AskUserQuestion**, `multiSelect: true`: `I am faster`, `I market harder than anyone around me`, `I control a step other people hand off`, `I stay involved longer`, `I know something the others do not`. Then one open follow-up on whichever they picked.
+
+3. "When somebody chooses you, what happens differently?" **AskUserQuestion**, `multiSelect: true`: `They get a better number`, `It moves faster`, `They stop worrying about it`, `They know what is happening the whole time`, `They come back and send people`.
 
 **Never ask what mistakes other people make.** Infer it, or state it as contrast in the output. Asking gets you a complaint about competitors, not a differentiator.
 
@@ -350,7 +345,7 @@ Three questions, each doing the work of four:
 
 Then build the full profile: two or three system-name options for them to pick from, what the system does, the three to five steps, the "most people vs me" lines, the psychology of why it works, three or four power statements they can say out loud, the one-liner, and messaging they can use tomorrow. Rewrite anything generic automatically rather than handing it back.
 
-Close with one question: *"Do you want this to sound more high-end, more aggressive, or more simple?"* One rewrite pass, then stop.
+Close with one question, using **AskUserQuestion**: "Do you want this to sound more high-end, more aggressive, or more simple?" Options: `More high-end`, `More aggressive`, `More simple`, `It is right as it is`. One rewrite pass, then stop.
 
 The engine reference carries the full generation spec, the quality bar, and the rules. Follow it rather than restating it here.
 
@@ -358,13 +353,19 @@ The engine reference carries the full generation spec, the quality bar, and the 
 
 **The most important file in the brain. Do not let them rush it.**
 
-Ask these ONE AT A TIME. Wait for each. Never batch them.
+**This is the one file where the ANSWERS cannot be multiple choice, and the CHOOSING still is.** A story has to come out of their mouth. Nobody can tap a button and have their own story appear. So do not make them face five blank prompts in a row. Make them pick first.
+
+Open with **AskUserQuestion**, `multiSelect: true`: `Why I got into this`, `A deal that almost died`, `A client who was scared`, `A mistake I learned from`, `The moment I knew I was good at this`.
+
+Then take ONLY the ones they picked, ONE AT A TIME, in their words:
 
 1. "Why did you get into this? What were you doing before?"
 2. "Tell me about a deal or a project that almost died, and what you did."
 3. "Tell me about a client who was scared or overwhelmed. What changed for them?"
 4. "What's a mistake you made early on that you now protect clients from?"
 5. "Tell me about a moment when you knew you were actually good at this."
+
+**Remind them the microphone is right there.** Most people tell a story three times better than they type it, and this is the file where that gap costs the most.
 
 If an answer is short, ask ONE follow-up: *"What did that feel like in the moment?"* Then move on. Never more than one. If they cannot think of one, skip it. Three real stories beat five invented ones.
 
@@ -407,7 +408,7 @@ Files 06 through 10 continue in FULL mode or a later session.
 
 If that avatar is rich, you may need no questions at all. Say so out loud. That is the system working.
 
-**Only for genuine gaps,** ask one at a time (lane-specific questions in `references/profession-lanes.md`).
+**Only for genuine gaps,** ask one at a time (lane-specific questions in `references/profession-lanes.md`). Every one of those lane questions offers **AskUserQuestion** options first, with an escape hatch, so the common answers are a tap and only the unusual ones get typed.
 
 Collect it raw. Do not clean it up. Do not turn it into marketing.
 
@@ -447,7 +448,9 @@ Close every version with: **"AI wrote it" is not a defense. Your name is on it.*
 
 ## FILE 09. `09-wins-and-testimonials.md`
 
-Ask: "Do you have testimonials, wins, or results you can share?"
+Ask with **AskUserQuestion**: "Do you have testimonials, wins, or results you can share?" Options: `Yes, I can paste some in`, `Yes, but not written down`, `Numbers but no quotes`, `Not yet`.
+
+`Yes, but not written down` is the most common real answer and it is not a no. Tell them to say one out loud and write it down for them.
 
 **If yes:** structure them into clean proof assets with the real numbers and the real quotes.
 
@@ -661,25 +664,13 @@ They reach it by typing `start phase two`, `I bought it`, `I joined`, `I'm a pai
 - **Never ask for a password and never type one.** They enter it themselves, always.
 - **Never move, rename, or delete their Business Brain folder.** It stays exactly where it is. The installer finds it on its own. Moving it is the one way today's work gets lost.
 - Tell them up front: about 15 minutes, and most of it is you working, not them.
-- **Make every answer tappable, never typed.** Whenever you ask them something that has a small set of possible answers, or you ask them to tell you a step is finished, put the exact words they should send **in a fenced code block on its own line**. Claude Code renders a fenced block with a click control, so they tap it instead of typing. Offer each option as its own block.
+- **Make every answer tappable, never typed. Use AskUserQuestion, the same as Phase 1.** Whenever you ask them something with a small set of possible answers, or you ask them to confirm a step is finished, it is an **AskUserQuestion** call with real options.
 
-  Asking which system they bought looks like this, not like a sentence with two choices in it:
+  This rule used to say to put the words in a fenced code block. That was wrong and it was caught on a live test: a fenced block renders with a **copy** icon, not a button, so the person has to copy, click the input, paste, and send. Four actions where there should be one. Corrected 2026-08-31 to match hard rule 9. **A fenced code block in Phase 2 is only ever for something they PASTE somewhere else, like a folder path or a command that runs in a different window. Never for an answer to you.**
 
-  ```
-  real estate agents and lenders
-  ```
+  Asking which system they bought is an **AskUserQuestion**: `Real estate agents and lenders`, `Coaches and consultants`, `Not sure`. Waiting on them is an **AskUserQuestion**: `Done`, `It did not work`.
 
-  ```
-  coaches and consultants
-  ```
-
-  And when you are waiting on them, give them the word to send back:
-
-  ```
-  done
-  ```
-
-  Somebody who talks more than they type, or who is holding a laptop on their knees in a ballroom, should be able to get through the whole of Phase 2 without typing a single character. That is the standard.
+  Somebody who talks more than they type, or who is holding a laptop on their knees in a ballroom, should get through the whole of Phase 2 without typing a single character. That is the standard.
 
 - **Never put a runnable block on a command that has to run somewhere else.** This bit for real on 2026-08-24: the handoff showed `set up my OS` as a tappable block while the session was still pointed at the Business Brain folder. The student tapped it, it ran in the wrong folder, and nothing there knew what it meant. At the handoff the **folder path** is the tappable thing, because that is what they paste into the folder picker. The command itself is written as plain words they will type in the NEW session, deliberately not tappable here.
 
@@ -688,7 +679,7 @@ They reach it by typing `start phase two`, `I bought it`, `I joined`, `I'm a pai
 
 Ask:
 
-> "Which one did you buy, the one for real estate agents and lenders, or the one for coaches and consultants?"
+**AskUserQuestion**: "Which one did you buy?" Options: `The one for real estate agents and lenders`, `The one for coaches and consultants`, `I am not sure`.
 
 Agents and lenders get `Krista-Mashore-Coaching/Agent-Authority-Operating-System`.
 Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operating-System`.
