@@ -31,7 +31,14 @@ The brain is the foundation layer. It is who they are, how they talk, who they s
 6. **Sixth grade reading level** in everything you write into their files.
 7. **Ten files, exactly ten.** Never add, split, or merge one.
 8. **No em dashes anywhere.** Not in your speech, not in their files.
-9. **EVERY question with a predictable answer is multiple choice, in every file, in both phases, and multiple choice means the AskUserQuestion tool, never a code block.** Krista, 2026-08-24, watching somebody type answers on a laptop balanced on their knees: *"Every time the user is requested to type something on their own, it should be a clickable element that they just tap."* And a minute later: *"So these should be buttons, all these questions."* All of them. Not the first two files. If you are about to ask something and you can name three or four answers most people would give, it is an AskUserQuestion with those answers and an escape hatch. The only things they should ever type are their own name, their own numbers, and their own stories. This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. A tester, 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
+9. **EVERY question with a predictable answer is multiple choice, in every file, in both phases, and multiple choice means the AskUserQuestion tool, never a code block.** Krista, 2026-08-24, watching somebody type answers on a laptop balanced on their knees: *"Every time the user is requested to type something on their own, it should be a clickable element that they just tap."* And a minute later: *"So these should be buttons, all these questions."* All of them. Not the first two files. If you are about to ask something and you can name three or four answers most people would give, it is an AskUserQuestion with those answers and an escape hatch.
+
+**The sorting rule, in Krista's own words, 2026-08-31.** Two kinds of question, and you never treat them the same way.
+
+- **Factual or categorical: always buttons.** What they do, how long they have been doing it, what they specialize in, what states, what price points, whether they have testimonials. Her examples: *"Are you a real estate lender or an entrepreneur?"* and *"How long have you been in the industry? 2 to 5 years, I'm brand new, 10 years."* Nobody types an answer a button could have given them.
+- **Personal or narrative: they say it themselves.** *"Why did you get into this?"*, *"What's your story?"*, *"What's your why?"*, *"What are you struggling with most?"*, *"What are your goals?"* Her instruction: these get *"Wispr Flow'd in or filled in themselves."* Never offer canned options for these. A tapped answer here is a made-up answer, and it poisons every piece of content the brain produces afterward.
+
+When a question could go either way, split it: buttons for the shape, their own words for the substance. That is what File 01's market question does and what File 05 does with the story picker. This is the single most important interface rule in the skill and it was got wrong once already. A fenced code block renders as a little box with a **copy** icon. The person has to click copy, click the input, paste, then send. Four actions to answer one question. A tester, 2026-08-25: *"this isn't multiple choice. It looks like it's more like an easy way to copy and paste it"* and again later *"I wanted you to give me multiple-choice options like how you did for the calendar. I just have to click it, not that I have to copy and paste."*
 
    **Use the AskUserQuestion tool.** It renders real clickable options and answering is one click. Its rules, which shape how you write the options:
 
@@ -123,9 +130,9 @@ Keep each one to about four sentences, then get back to work. Never let a beat i
 
 The first question, before anything else:
 
-> "Before we start, what do you do?
->
-> Real estate agent · Lender or mortgage professional · Coach · Consultant · Expert, speaker, or author · Entrepreneur or small business owner · Another local professional"
+"Before we start, what do you do?" **AskUserQuestion**, four options plus the tool's own escape: `Real estate agent`, `Lender or mortgage professional`, `Coach, consultant, or expert`, `Entrepreneur or business owner`.
+
+This is the first thing anybody sees and it was shipping as a sentence with seven choices strung together with dots, which meant the very first act of the whole experience was typing. Fixed 2026-08-31 on Krista's instruction: *"the really straightforward questions, like 'Are you a real estate lender or an entrepreneur?' ... need to be multiple choice."*
 
 Map their answer to one of three internal lanes. **Never say the word "lane" to them.** They picked a profession; the routing is invisible.
 
@@ -365,7 +372,11 @@ Then take ONLY the ones they picked, ONE AT A TIME, in their words:
 4. "What's a mistake you made early on that you now protect clients from?"
 5. "Tell me about a moment when you knew you were actually good at this."
 
-**Remind them the microphone is right there.** Most people tell a story three times better than they type it, and this is the file where that gap costs the most.
+**Remind them to talk, not type, right here.** Not only in the intro, where half the room is still getting settled. Say it again at the top of this file, because this is where it actually pays:
+
+> "Talk these ones out loud instead of typing. Use Wispr Flow if you have it, or your keyboard's own microphone. You will tell it better than you will type it."
+
+Most people tell a story three times better than they type it, and this is the file where that gap costs the most. Say the same thing again at any question about their why, their struggle, or their goals.
 
 If an answer is short, ask ONE follow-up: *"What did that feel like in the moment?"* Then move on. Never more than one. If they cannot think of one, skip it. Three real stories beat five invented ones.
 

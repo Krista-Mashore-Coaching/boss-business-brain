@@ -36,7 +36,9 @@ means a different metric in each one.
 
 ### AGENT lane
 
-1. "How many homes have you sold, and over how many years?"
+1. "How many homes have you sold?" **Their number, so they type it.**
+   Do NOT ask "over how many years" here. File 01 already took their
+   years as a button and asking again breaks hard rule 10.
 2. "What's your market area, the actual neighborhoods or towns you work?"
 3. "Do you hold any designations?" **AskUserQuestion**, `multiSelect: true`:
    `CNE`, `CRS`, `GRI`, `ABR`, and the tool's own escape for anything else.
@@ -47,7 +49,8 @@ means a different metric in each one.
 
 ### LENDER lane
 
-1. "How many loans have you closed, and over how many years?"
+1. "How many loans have you closed?" **Their number, so they type it.**
+   The years are already in File 01. Do not ask twice.
 2. "What's your NMLS number?" This is a compliance-critical field for File
    08 as well as a proof point here. Do not skip it.
 3. "What loan types do you specialize in?" **AskUserQuestion**,
@@ -59,7 +62,8 @@ means a different metric in each one.
 
 ### GENERAL lane
 
-1. "How many clients have you served, and over how many years?"
+1. "How many clients have you served?" **Their number, so they type it.**
+   The years are already in File 01. Do not ask twice.
 2. "What results do you actually deliver? Be specific if you can, numbers,
    outcomes, before-and-after."
 3. "Do you hold any credentials or certifications in your field?"
@@ -271,14 +275,23 @@ This lane cannot assume the rules the way AGENT and LENDER can. "Consultant,"
 "coach," "attorney," and "contractor" all answer to different bodies with
 different rules. Ask instead of assuming. Ask one at a time:
 
+These are factual questions, so they are buttons, per hard rule 9.
+
 1. "Does your field have a licensing board or certifying body with rules
-   about how you can advertise?"
-2. "Are there any claims or promises you've been told you can never make,
-   things like guaranteed results or specific outcomes?"
+   about how you can advertise?" **AskUserQuestion**: `Yes, and I know the
+   rules`, `Yes, but I do not know the details`, `No`, `Not sure`.
+2. "Are there any claims or promises you have been told you can never
+   make?" **AskUserQuestion**, `multiSelect: true`: `Guaranteed results`,
+   `Specific income or outcome numbers`, `Medical or legal claims`,
+   `Nothing I know of`.
 3. "Do you have to include a disclaimer, a license number, or a disclosure
-   on anything you publish?"
-4. "Has anyone in your industry ever had content pulled or flagged, and do
-   you know what it was for?"
+   on anything you publish?" **AskUserQuestion**, `multiSelect: true`:
+   `A disclaimer`, `A license or registration number`, `A results
+   disclosure`, `Nothing required`.
+4. "Has anyone in your industry ever had content pulled or flagged?"
+   **AskUserQuestion**: `Yes, and I know what for`, `Yes, but I do not
+   know why`, `Not that I know of`. Only if they pick the first one, ask
+   the one open follow-up about what it was for.
 
 Build File 08 from their actual answers. If the person does not know their
 industry's rules, do not fill the gap with a guess. Write plainly in the
