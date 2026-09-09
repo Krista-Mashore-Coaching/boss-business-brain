@@ -667,7 +667,9 @@ If any section is missing, thin, or marked `ADD REAL LANGUAGE HERE LATER`, say e
 
 ## Before the close: the free GitHub account
 
-**This moved INTO Day 1 on 2026-08-30, at Krista's direction.** It used to sit in Phase 2 and it was the slowest step of the Day 3 install, about five minutes each across a whole room, inside the tightest block of the event. A GitHub account is free, empty, and gives nothing away, so it costs nothing to create it on Day 1 and it buys back the block on Day 3.
+**Ask whether they have one. Never create one here.** Krista-directed 2026-09-09, watching this run live: *"Don't ask to walk them through it yet because we're not there. That is full-on phase two."*
+
+The account got moved into Day 1 on 2026-08-30 to buy back time in the install block at a live event. That reason was event-specific. This sells monthly now, the install has its own session, and her Phase 2 walkthrough already creates the account at its own slides. So Day 1 captures a username if they already have one, and nothing more.
 
 **Frame it as finishing the free thing. Never as a step toward buying.** On Day 1 the offer has not been made. Do not mention the Operating System, a repository, an invitation, or anything coming next.
 
@@ -681,21 +683,15 @@ Use **AskUserQuestion**: `Yes`, `No`, `Not sure`.
 
 **If yes:** ask for the username, read it back to confirm the spelling, and write it to their folder.
 
-**If no or not sure:** walk them through it, ONE instruction at a time, waiting after each:
+**If no or not sure: do not offer to create one, and do not ask a follow-up question.** Say this and move straight to the close:
 
-  a. Open a browser and go to `github.com`
-  b. Click **Sign up**, top right
-  c. Enter their email address
-  d. Create a password. Tell them to use a password manager or write it somewhere safe, because they will need it again
-  e. Pick a username. Tell them it will be visible, so keep it simple and professional, their name plus a number is fine, and it cannot have spaces
-  f. Answer the puzzle that proves they are human
-  g. Click **Create account**
-  h. Go to their email, find the code GitHub sent, enter it
-  i. If it asks about team size or what they want to use it for, they can skip or pick anything
+> "Okay, no worries. If you don't have an account yet, just stay close by for Phase 2."
+
+That is the whole branch. No second question, no walkthrough, no link. Creating the account belongs to Phase 2 and it is covered there.
 
 **Never ask them for their password and never type it for them.** They enter it themselves.
 
-When they are done, ask for the exact username and **read it back to confirm the spelling.**
+When somebody DOES have an account, ask for the exact username and **read it back to confirm the spelling.**
 
 Then write it into their folder so nobody has to remember it days later:
 
@@ -706,7 +702,7 @@ Confirm in one line and move to the close:
 
 > "Saved. That is in your folder now, so you do not have to remember it."
 
-**If they refuse or cannot finish it, let it go and close normally.** It is a convenience, not a gate, and pushing somebody at the end of ninety minutes costs more than it saves.
+**Nothing here is a gate.** Somebody without an account loses nothing on Day 1 and picks it up at the start of Phase 2.
 
 ## How Day 1 ends, and it is not with a question
 
@@ -760,7 +756,27 @@ Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operatin
 
 ## P2.2. They should already have GitHub and already be added
 
-**Do not walk anybody through creating a GitHub account here.** Account creation moved out of Phase 2 on 2026-08-26, and on 2026-08-30 it moved to the END OF PHASE 1 in this same skill, so by the time somebody reaches Phase 2 they made the account on Day 1 and the username is already saved in their folder. Read it back to them rather than asking them to remember it.
+**Creating the GitHub account happens HERE, at the start of Phase 2.** Krista-directed 2026-09-09, and it matches her Phase 2 walkthrough, which opens by creating the account.
+
+**First, look in their folder for a saved username.** Somebody who already had an account on Day 1 has it written there. Read it back rather than asking them to remember it, and skip straight past this.
+
+**If there is no username saved, they do not have an account. Create it now**, ONE instruction at a time, waiting after each:
+
+  a. Open a browser and go to `github.com`
+  b. Click **Sign up**, top right
+  c. Enter their email address
+  d. Create a password. Tell them to use a password manager or write it somewhere safe, because they will need it again
+  e. Pick a username. Tell them it will be visible, so keep it simple and professional, their name plus a number is fine, and it cannot have spaces
+  f. Answer the puzzle that proves they are human
+  g. Click **Create account**
+  h. Go to their email, find the code GitHub sent, enter it
+  i. If it asks about team size or what they want to use it for, they can skip or pick anything
+
+**Never ask them for their password and never type it for them.** They enter it themselves.
+
+When they are done, ask for the exact username, **read it back to confirm the spelling**, and write it into their folder.
+
+A person cannot be invited to a private repository until their account exists, so this has to be finished before the access form, not after it.
 
 Why it moved, and it is a real constraint rather than a preference. The automation lead, working the automation with the tester: *"they need a GitHub in order to be invited to the operating system to start the process, so this needs to come before that."* A person cannot be invited to a private repository until their account exists, so the account has to be created before the install, not during it. The tester's decision on the call: *"we'll just take it out of Phase 2, of walking them through it."*
 
