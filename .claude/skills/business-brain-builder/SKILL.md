@@ -756,7 +756,7 @@ Coaches, consultants and experts get `Krista-Mashore-Coaching/Authority-Operatin
 
 Why it moved, and it is a real constraint rather than a preference. The automation lead, working the automation with the tester: *"they need a GitHub in order to be invited to the operating system to start the process, so this needs to come before that."* A person cannot be invited to a private repository until their account exists, so the account has to be created before the install, not during it. The tester's decision on the call: *"we'll just take it out of Phase 2, of walking them through it."*
 
-What happens instead: after they sign the contract and make the down payment, they go to the back table, scan the code there, and fill in a short form that collects their GitHub username and whether they are Agent/Lender or Other. The form carries a sign-up link for anybody without an account. **The automation checks for the SIGNED CONTRACT** and only then adds them to the right repository.
+What happens instead: after they sign the contract and make the down payment, they fill in a short access form that collects their GitHub username and whether they are Agent/Lender or Other. The form carries a sign-up link for anybody without an account. **The automation checks for the SIGNED CONTRACT** and only then adds them to the right repository.
 
 **The invite lands in their GitHub account, not their inbox, and they do not have to accept it before reaching you.** GitHub usually emails as well and that email often lands in spam, but the email is not the delivery. Never send somebody hunting through spam as the first move. Accepting during setup is normal and expected (Run Sheet v2, Stage 3 and Stage 4).
 
@@ -764,23 +764,25 @@ So by the time Phase 2 runs, they have an account and an invitation. **Your job 
 
 Ask one question:
 
-> "Have you submitted the access form at the back table?"
+> "Have you signed your contract?"
 
-Use **AskUserQuestion**: `Yes, submitted`, `Yes, but I'm not sure it worked`, `Not yet`.
+Use **AskUserQuestion**: `Yes, signed`, `Yes, but I'm not sure it went through`, `Not yet`.
 
-- **Submitted:** go to P2.4 and verify the access for real. Do not ask whether they accepted an email first. If P2.4 shows they are not in yet, THEN walk them through accepting: sign in at github.com, open notifications, accept the invitation there.
-- **Not sure it worked:** treat it the same as submitted and let P2.4 answer it. Verification beats asking.
-- **Not yet:** give them the form and wait. Do not offer to walk them through GitHub instead. If they have not signed the contract yet, the form cannot help them and the answer is the back table, not you.
+Ask about the CONTRACT, not the form. Krista-directed 2026-09-09, live in a session. The contract is the thing the buyer actually remembers doing; the access form is plumbing they may not distinguish from the checkout, so asking about it gets a confused answer. Nothing is lost by asking the simpler question, because P2.4 verifies the real access with `gh` a moment later and that check is authoritative either way.
 
-> "You need the access form first. It takes about a minute and it is what gets you added.
+- **Signed:** go to P2.4 and verify the access for real. Do not ask whether they accepted an email first. If P2.4 shows they are not in yet, THEN walk them through accepting: sign in at github.com, open notifications, accept the invitation there.
+- **Not sure it went through:** treat it the same as signed and let P2.4 answer it. Verification beats asking.
+- **Not yet:** stop. Nothing here works before the contract is signed and the down payment is made, and that is not something you can route around. Say so plainly and let them go do it.
+
+> "Your contract has to be signed and your down payment made before any of this unlocks. Once that is done, there is a short access form that collects your GitHub username, and that is what gets you added.
 >
 > https://app.kristamashore.com/widget/form/NNOpbbKXQV9eKpPM2eXE
 >
-> Come back and tell me once you have accepted the invitation email."
+> Come back and tell me once you have done both."
 
 **The form and the purchase check are LIVE as of 2026-08-30** (Krista confirmed in chat). The automation reads their GoHighLevel purchase and only then adds them to the right repository, so a non-buyer who reaches the form does not get access.
 
-> **LIVE, verified 2026-08-30.** The form above is the real GoHighLevel access form, built by Jerry and sent 2026-08-27. Confirmed by opening it: it is titled "Sign Up To Receive Your B.O.S.S." and collects Full Name, GitHub Username, Phone, Email, and whether they are an agent or lender. This is the PAID Phase 2 form and it is contract-gated, so it is handed to buyers at the back table only, never shown to the room. Fallback if it is ever down: hand the GitHub username to a team member at the back table and it gets entered by hand.
+> **LIVE, verified 2026-08-30.** The form above is the real GoHighLevel access form, built by Jerry and sent 2026-08-27. Confirmed by opening it: it is titled "Sign Up To Receive Your B.O.S.S." and collects Full Name, GitHub Username, Phone, Email, and whether they are an agent or lender. This is the PAID Phase 2 form and it is contract-gated, so it goes to buyers only and is never shown to a room. Fallback if it is ever down: a team member enters the GitHub username by hand.
 
 **Never improvise around the purchase check.** If somebody's purchase has not matched, that is a human on Krista's team, not something to route around. Say so plainly and stop.
 
