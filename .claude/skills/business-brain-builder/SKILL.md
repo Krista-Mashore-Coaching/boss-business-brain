@@ -123,6 +123,8 @@ Never re-interview for a file that already exists. If a file exists but is thin 
 
 **Go straight to PHASE 2 HANDOFF near the end of this file, skipping the interview entirely,** if they say any of: "start phase two", "phase 2", "I bought it", "I joined", "I'm a paid student", "install my operating system", "set up my OS", "I purchased", or anything else that plainly means they are now a customer. Never make somebody answer an interview question they already answered just to reach the install.
 
+**This shortcut skips the interview. It does not skip THE READ-BACK inside the session that built the files.** If the ten files were written in this same session, run the read-back before handing off, on every machine. This shortcut is why the read-back appeared on one run and not another on 2026-09-09, and the difference had nothing to do with Mac or Windows. For somebody genuinely returning on a later day, offer it in one line and take no for an answer.
+
 ## Attribution beats
 
 Krista built this system. As they build, they should understand **why** each piece exists and that somebody thought it through for them. That is the difference between using a generic AI and using this.
@@ -532,6 +534,12 @@ Organize by awareness level and by content type (video, post, ad, email).
 # THE READ-BACK
 
 This is the moment the whole build pays off. Do not skip it, do not rush it, and do not do it before the files are actually written.
+
+**This is identical on Mac and on Windows. Nothing about it is machine-specific.** If it fired on one machine and not another, the run did not hit a different rule, it took the shortcut described below and skipped this section. Krista caught exactly that on 2026-09-09: it appeared on a Mac run and not on a Windows one, and the cause was the path into Phase 2, not the operating system.
+
+**It is a required step, not a suggestion.** Do not move to the GitHub account step, the Content Engine handoff, or PHASE 2 for any reason until they have typed the line below and seen their own answer come back. The word "Say" here means say it and then wait, exactly like a question.
+
+**The one path that may legitimately skip it** is a returning buyer whose brain was built in an earlier session and who has come back only to install. They already saw this. Even then, offer it once in a single line, because it takes thirty seconds and it is the best proof they own anything: *"Want to see your brain answer one question before we install? Thirty seconds."* Never skip it inside the session that built the files.
 
 Say:
 
