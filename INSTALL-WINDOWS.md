@@ -199,7 +199,7 @@ From here your screens match the video again.
 
 ### 15. It gives you a code *(slide 34)*
 
-A code in big red letters, like `9247-D52F`. Write it down or leave the window open.
+A code in big red letters, like `9247-D52F`. Write it down or leave the window open. If it says the code expired when you type it, tell BOSS: the code expired. It gives you a new one.
 
 ### 16. Open github.com/login/device *(slide 35)*
 
@@ -343,6 +343,12 @@ Every file on the left is part of your system. Your brand, your offers, your scr
 **Closing the Claude window does not quit Claude.** It keeps running. To really quit it, find the Claude icon in the **system tray** by the clock at the bottom right, right-click it, choose **Quit**, watch it disappear, then reopen. If a step told you to restart Claude and nothing changed, this is why.
 
 **A command that "is not recognized" right after you installed it** is almost never a failed install. BOSS refreshes this by itself now and carries on, so you should not see it at all. If you do, tell BOSS and let it sort it out rather than closing anything yourself.
+
+---
+
+# You are done
+
+Nothing else to install. Nothing else to download. Open BOSS tomorrow and ask it to do one thing for you.
 
 ---
 

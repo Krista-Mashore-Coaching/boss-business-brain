@@ -209,7 +209,7 @@ The video says *Install GitHub CLI via Homebrew*. Yours will not mention Homebre
 
 ### 15. It gives you a code *(slide 34)*
 
-A code in big red letters, like `9247-D52F`. Write it down or leave the window open.
+A code in big red letters, like `9247-D52F`. Write it down or leave the window open. If it says the code expired when you type it, tell BOSS: the code expired. It gives you a new one.
 
 ### 16. Open github.com/login/device *(slide 35)*
 
@@ -345,6 +345,12 @@ One box pops up. Click that button.
 Every file on the left is part of your system. Your brand, your offers, your scripts, your frameworks, your skills.
 
 **All of it is on your computer. You own it.**
+
+---
+
+# You are done
+
+Nothing else to install. Nothing else to download. Open BOSS tomorrow and ask it to do one thing for you.
 
 ---
 

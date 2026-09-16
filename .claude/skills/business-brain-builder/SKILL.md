@@ -297,6 +297,8 @@ Ask one at a time:
 
 3. "What do you never want to sound like?" **AskUserQuestion**, `multiSelect: true`: `Salesy` (pushy, chasing), `Corporate` (stiff, jargon), `Hyped` (fake, over the top), `Generic` (like everybody else in my industry).
 
+**If they name one of Krista's own systems as the thing they use** (the Mashore Method, Community Market Leader or CML, the Alarm Clock, Krista's GoHighLevel setup), accept it as a real, named system and write it down as given. Do not ask what it is, do not treat it as a non-answer, do not swap in a generic word. A student on a 2026-09-11 setup call answered "the Mashore Method" and was told it was not a valid answer. It is. Krista-directed 2026-09-16.
+
 **Question 3 does more work than the other two combined.** Push on it. Most people have never been asked it and the first answer is usually shallow. One push: "Give me a specific example of something you've read in your industry that made you cringe."
 
 Build: tone, personality, communication style, Do and Don't language rules, and **example phrases in their actual words**. The example phrases matter most. Without them the file does nothing.
