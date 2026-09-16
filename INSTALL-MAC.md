@@ -356,7 +356,7 @@ Nothing else to install. Nothing else to download. Open BOSS tomorrow and ask it
 
 # It updates itself
 
-Every time you open BOSS it brings in Krista's latest version and installs it. You never do anything. A brand-new release takes open, close, open. If you ever want to force it, say: check for updates.
+Every time you open BOSS it brings in Krista's latest version and installs it. You never do anything. A brand-new update takes open, close, open. If you ever want to force it, say: check for updates.
 
 ---
 
