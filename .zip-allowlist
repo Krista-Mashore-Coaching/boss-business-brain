@@ -1,0 +1,15 @@
+# .zip-allowlist - the ONLY paths allowed inside the public BOSS-AI-Business-Brain.zip.
+# Read by scripts/publish-release.sh. One entry per line. A line ending in "/" is a
+# folder prefix; anything else is an exact path. A line starting with "!" is REQUIRED
+# (the publish is refused if it is missing). Anything staged that matches nothing here
+# refuses the publish. Krista-directed 2026-09-16: a future mistake must never push a
+# paid kit skill to the free public link.
+!START-HERE.md
+!CLAUDE.md
+!INSTALL-MAC.md
+!INSTALL-WINDOWS.md
+INSTALL-MAC.pdf
+INSTALL-WINDOWS.pdf
+.claude/settings.json
+!.claude/skills/business-brain-builder/SKILL.md
+.claude/skills/business-brain-builder/

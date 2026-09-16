@@ -40,45 +40,43 @@ Do not go poking at it yourself. Do this, in this order.
 
 # Part 1: Build your Business Brain
 
-### 1. Download the file on your LAPTOP
+### 1. Open Claude Desktop
 
-Open a browser on the laptop you are going to work on and go to the link we gave you.
+Claude Desktop is the app on your computer, not claude.ai in a browser tab. If you do not have it, download it at **claude.ai/download**, sign in, then drag Claude into your Applications folder.
 
-Do not scan a QR code with your phone. The file has to land on the laptop. If you already did, open your email on the laptop and use the link there.
-
-Enter your name, your email, and the password.
-
-### 2. Unzip it
-
-The file is `BOSS-AI-Business-Brain.zip` and it lands in your Downloads folder.
-
-**Double-click it.** A folder appears right next to it with the same name. That folder is the one you want.
-
-Wherever it landed is fine. Do not pull any files out of it.
-
-### 3. Open the Claude app
-
-The app on your computer, not claude.ai in a browser. If you do not have it, get it at **claude.ai/download**, then drag Claude into your Applications folder.
-
-### 4. Point it at your folder
+### 2. Click Code, then New session, then Select folder
 
 Click **Code** at the top. Start a **new** session. Click **Select folder**.
 
-Choose the folder you just unzipped, the one with `START-HERE.md` sitting directly inside it. If you open it and see another folder with the same name inside, go one level in and pick that one.
+Pick your **Desktop** from the list on the left side of the picker. Any folder works here. BOSS builds the right folder for you in the next step.
 
-### 5. Click Trust
+### 3. Click Trust
 
 Claude asks once whether you trust this folder. Click **Trust**.
 
-### 6. Your Mac asks a second time. Click Allow.
+### 4. Your Mac asks a second time. Click Allow.
 
 This is the step that throws people, so read it before it happens.
 
-macOS controls which apps can see your Desktop, Documents and Downloads. The first time Claude reads a folder in one of those, **your Mac** puts up its own box: *"Claude would like to access files in your Downloads folder."*
+macOS controls which apps can see your Desktop, Documents and Downloads. The first time Claude reads a folder in one of those, **your Mac** puts up its own box: *"Claude would like to access files in your Desktop folder."*
 
 Click **Allow**. It is a different box from the Trust one, it arrives second, and it looks like an error. It is not. It only asks once.
 
 Clicked Don't Allow by accident? Apple menu, System Settings, Privacy and Security, Files and Folders, switch Claude back on.
+
+### 5. Copy this one line and paste it in
+
+Copy the line below. Click in the chat box. Paste it. Press return.
+
+> Set up my BOSS Business Brain. Download https://github.com/Krista-Mashore-Coaching/boss-business-brain-download/releases/latest/download/BOSS-AI-Business-Brain.zip and unzip it so that the file START-HERE.md sits directly inside a folder named BOSS-AI-Business-Brain in my Sites folder (create Sites in my home folder if it does not exist, and do not leave an extra folder in between). Delete the zip, then tell me exactly how to open that folder as my new session and say hi. Do not ask me any questions until it is unzipped.
+
+**It is the one that starts with "Set up my BOSS Business Brain." It looks long. That is fine.** You do not need to read it or understand it. Copy the whole thing and paste the whole thing.
+
+**Got here by scanning a QR code on your phone?** Type your email in on that page and open the email on your computer. The line to paste is in it.
+
+### 6. BOSS downloads it
+
+BOSS downloads the file, builds your folder, unzips it, and deletes the zip. When it is done, it tells you exactly what to do: click **Select folder** again, choose **Sites**, then **BOSS-AI-Business-Brain**, click **Trust**, and say hi.
 
 ### 7. Say hi
 
@@ -99,6 +97,8 @@ Near the end it walks you through it and saves your username. Two minutes.
 ---
 
 # Part 2: Install your Operating System
+
+**Yours, for one business.** This system is licensed to you. Copying it, sharing it, or installing it for anyone else breaks the agreement you signed. Every copy is tied to the GitHub account it was installed under, so a copy that turns up somewhere else can be traced back, and Krista's team will take legal action. A business partner named on your signed partnership agreement is covered. Nobody else is.
 
 Every step below matches a slide in the video, so you can follow either one.
 
@@ -167,7 +167,7 @@ Click **number 2, Install my Operating System**. You do not type anything. Just 
 
 ### 10. It asks which system you bought *(slide 18)*
 
-Click **number 1, Real estate agents and lenders**.
+Click the one that is you: **number 1, Real estate agents and lenders**, or **number 2, Coaches, consultants and everyone else**.
 
 ### 11. It asks about the form *(slide 19)*
 
@@ -181,85 +181,52 @@ A box says *Allow Claude to run...*
 - **Never click Deny.**
 - This happens several times. Same answer every time.
 
-## Homebrew (Mac only)
+## The video shows Homebrew. Your system does not use it any more. *(slides 21 to 31)*
 
-Windows people do not have this section at all. On a Mac you probably do need it.
+**Slides 21 to 31 of the video walk through installing something called Homebrew: copying a command, opening Terminal, typing your password into a box that shows nothing, waiting several minutes, then pasting three more lines. Skip every one of them.**
 
-### 13. You may need Homebrew *(slide 21)*
+That is no longer how this works. BOSS installs the one tool it needed Homebrew for, by itself, in the background. You will not open Terminal, you will not copy a command, and you will not paste anything.
 
-BOSS checks your computer for a tool called Homebrew. **Most people do not have it. That is normal.** It sends you to brew.sh.
+**You will not be asked for your password either.** The old way needed it. This one does not. If anything ever asks you to paste a command into Terminal during this install, something has gone wrong: stop, screenshot it, and bring it to office hours.
 
-### 14. Go to brew.sh *(slide 22)*
-
-New tab. Type `brew.sh`. Find the black box under **Install Homebrew**. Click the **copy icon** on the right side of that box.
-
-### 15. Open Terminal *(slide 23)*
-
-- Hold **Command** and press the **Spacebar**
-- Type `Terminal`
-- Press return
-
-A black or white window opens. That is Terminal.
-
-### 16. Paste it and press return *(slide 24)*
-
-Click inside the Terminal window. Hold **Command** and press **V**. Press return.
-
-### 17. Type your Mac password. Nothing will show up. *(slide 25)*
-
-It says `Password:`. Type the password you use to log into your computer.
-
-**You will see NOTHING. No dots. No stars. Nothing moves.** That is normal and it is on purpose. Keep typing. Press return.
-
-### 18. Press RETURN one more time *(slide 26)*
-
-A big list appears. At the bottom it says *Press RETURN/ENTER to continue*. **Press return again or nothing happens.**
-
-### 19. Now wait. Several minutes. *(slide 27)*
-
-Text scrolls by. Let it. Do not close the window. Do not click anything. Do not go back to Claude yet.
-
-You are done when you see **Installation successful!** *(slide 28)*
-
-### 20. Three more commands. Do not skip this. *(slide 29)*
-
-- BOSS shows a box with three lines starting with `echo` and `eval`
-- Click the **copy icon** on that box
-- Go to Terminal. Paste, **Command + V**. Press return.
-- Go back to Claude and click **Done**, number 1 *(slide 30)*
-
-**If it says Failed to verify** *(slide 31)*, you skipped the three commands or clicked Done too early. Go back to Terminal, run them, then tell BOSS: `it's done now`.
+Then carry on at step 13 below, which is slide 32 in the video.
 
 ## Getting your system onto the machine
 
-### 21. It checks its work *(slide 32)*
+### 13. It checks its work *(slide 32)*
 
-A box says *Verify Homebrew is now installed and working*. Click **Always allow**.
+A box comes up asking to check what is already on your computer. Click **Always allow**.
 
-### 22. It installs the GitHub tool *(slide 33)*
+The video says *Verify Homebrew is now installed and working* here. Yours will not say that. Homebrew is gone from this install; the wording is the only thing that changed.
 
-A box says *Install GitHub CLI via Homebrew*. Click **Always allow**. About a minute. Let it run.
+### 14. It installs the GitHub tool *(slide 33)*
 
-### 23. It gives you a code *(slide 34)*
+A box comes up asking to install the GitHub tool. Click **Always allow**. About a minute. Let it run.
+
+It downloads about 14 MB into your own user folder. No password, no Terminal, nothing to click through.
+
+The video says *Install GitHub CLI via Homebrew*. Yours will not mention Homebrew.
+
+### 15. It gives you a code *(slide 34)*
 
 A code in big red letters, like `9247-D52F`. Write it down or leave the window open.
 
-### 24. Open github.com/login/device *(slide 35)*
+### 16. Open github.com/login/device *(slide 35)*
 
 New tab. Type `github.com/login/device`.
 
-### 25. Make sure it is YOUR account *(slide 36)*
+### 17. Make sure it is YOUR account *(slide 36)*
 
 The page says **Device Activation** and **Signed in as [your name]**.
 
 - Your GitHub name? Click the green **Continue**.
 - Wrong name? Click **Use a different account** and sign in as you.
 
-### 26. Type in your code *(slide 37)*
+### 18. Type in your code *(slide 37)*
 
 Eight little boxes appear. Type the code. The dash is already there. Click the green **Continue**.
 
-### 27. Look for the green check mark *(slide 38)*
+### 19. Look for the green check mark *(slide 38)*
 
 The page says **Authorize GitHub CLI**. Scroll down to **Organization access**.
 
@@ -267,58 +234,59 @@ The page says **Authorize GitHub CLI**. Scroll down to **Organization access**.
 
 No green check? Screenshot it and bring it to office hours, the call, or the Facebook group.
 
-### 28. Scroll all the way down *(slide 39)*
+### 20. Scroll all the way down *(slide 39)*
 
 The yellow box about your location is normal. Ignore it. Keep scrolling, the button is at the bottom. Click the green **Authorize github**.
 
 You did it when it says **Congratulations, you're all set!** *(slide 40)*
 
-### 29. Back to Claude, click Done *(slide 41)*
+### 21. Back to Claude, click Done *(slide 41)*
 
 Click number 1, Done. Then one more **Always allow** on *Configure git credentials and check access*. *(slide 42)*
 
-### 30. Name your folder *(slide 43)*
+### 22. It names your folder *(slide 43)*
 
-BOSS says **You're in**.
+BOSS says **You're in**, then tells you the folder it is using. It builds the name
+from your business name, so there is nothing to choose and nothing to get wrong.
 
-- Click **2. Let me type a name** and type your business name
-- **Short. Dashes instead of spaces. No spaces ever.**
-- Or click **1. My-Operating-System** if you do not care
+The name is **BOSS-OS-** plus your business name, like `BOSS-OS-smith-lending`. Your private backup gets the same name. It is called BOSS, so the folder is named BOSS.
 
-**Write your folder name down. You need it in three steps.** *(slide 44)*
+The video shows a menu here asking you to pick a name. You will not see it.
 
-### 31. One more Always allow *(slide 45)*
+**Note down the folder name it gives you. You need it in three steps.** *(slide 44)*
+
+### 23. One more Always allow *(slide 45)*
 
 The box says *Clone the Operating System repo*. Click **Always allow**.
 
-### 32. It is on your machine *(slide 46)*
+### 24. It is on your machine *(slide 46)*
 
 About 130 skills just landed in your folder. BOSS gives you a path in a little box. **Click the copy icon on that box.**
 
 ## Opening your system
 
-### 33. Click New session *(slide 47)*
+### 25. Click New session *(slide 47)*
 
-### 34. Click the folder button at the bottom *(slide 48)*
+### 26. Click the folder button at the bottom *(slide 48)*
 
 Look at the bottom where it says **Local**. Click the folder button next to it.
 
-### 35. Paste the path. Click Open. *(slide 49)*
+### 27. Paste the path. Click Open. *(slide 49)*
 
 - **Easy way:** paste the path you copied, **Command + V**
 - **Or:** on the left, click your name with the house icon, then **Sites**, then your folder
 
 Click the blue **Open**.
 
-### 36. Click Trust workspace *(slide 50)*
+### 28. Click Trust workspace *(slide 50)*
 
 A box says *Trust this workspace?* Check that the path is YOUR folder. Click the black **Trust workspace**.
 
-### 37. Check the top of the window *(slide 51)*
+### 29. Check the top of the window *(slide 51)*
 
-It should say the name of your system: **Agent-Authority-Operating-System** if you are an agent or lender, **Authority-Operating-System** if you are a coach or consultant. That is right. That is its real name.
+It should say **Agent-Authority-Operating-System** or **Authority-Operating-System**, depending on which one you chose. That is right. That is its real name.
 
-### 38. Type: set up my OS *(slide 52)*
+### 30. Type: set up my OS *(slide 52)*
 
 **This one takes 45 to 60 minutes.**
 
@@ -326,53 +294,41 @@ It should say the name of your system: **Agent-Authority-Operating-System** if y
 - **You will not answer the same question twice**
 - Answer the questions. Keep clicking **Always allow**.
 
-### 39. It asks about your calendar and email *(slide 53)*
+### 31. It asks about your calendar and email *(slide 53)*
 
 Which calendar do you actually open day to day? Click **Google Calendar** or **Outlook**. Same for email.
 
 **Pick the one you really use, not the one you have heard of.**
 
-### 40. It asks about your private backup *(slide 54)*
+### 32. Your private backup happens by itself *(slides 54 and 55)*
 
-Take the answers marked **(Recommended)**. This keeps your work separate and private, under your own account.
+You will see one sentence go by: **"Your work is now backed up privately. Only you can see it."** That is the whole thing. There is nothing to approve, nothing to name, and nothing to confirm.
 
-### 41. If it asks a big question about git history *(slide 55)*
+Slides 54 and 55 in the video show being asked about the backup, and being asked a long technical question about history. **You should not see either one.** If you do, something has gone wrong: screenshot it, say no for now, and bring it to office hours. Do not try to answer it.
 
-It is checking before it touches anything. Say:
+## Keep your computer on
 
-> This is my personal kit. I'm a student. Go ahead.
+BOSS runs things on a schedule: your morning brief, and the jobs built into your kit. A sleeping computer runs nothing, scheduled or not. BOSS asks whether this is a desktop or a laptop, then sets your computer to stay awake by itself. On a Mac, it installs a small stay-awake helper. No password needed.
 
-Then it keeps going.
+**On a laptop:** keep it plugged in and the lid open when you want things to run. A closed lid is asleep, scheduled or not. If you have to close it, ask BOSS "how do I run from GitHub."
 
-## Obsidian, the window into your files
-
-### 42. Now let's get Obsidian *(slide 56)*
+### 33. Now let's get Obsidian *(slides 56 to 60)*
 
 Say yes when BOSS asks. Obsidian is a window that lets you see and read all your files. **Nothing lives inside it.** Your files are already on your computer.
 
-### 43. Go to obsidian.md/download *(slide 57)*
+**BOSS installs it for you. You do not download anything.**
 
-Open Chrome, type `obsidian.md/download`, click the purple **Download for macOS**.
+Slides 57 to 60 in the video show going to a download page, opening the file, and clicking through an installer. **Skip all of it.** BOSS fetches Obsidian straight from the people who make it and installs it itself. There is no browser, no download arrow, no dragging, and no "are you sure this is safe" box.
 
-### 44. Open the download *(slide 58)*
+Just wait. It takes about a minute, and BOSS tells you when it is done.
 
-Look at the top right of Chrome for the download arrow. Click it. Click **Obsidian.dmg**.
-
-### 45. Drag it into Applications *(slide 59)*
-
-A window opens with the Obsidian rock and a blue Applications folder. **Drag the rock on top of the blue folder.**
-
-### 46. Your Mac asks if you are sure *(slide 60)*
-
-A box says *Obsidian is an app downloaded from the Internet*. Click **Open**. This is normal. Apple already checked it.
-
-### 47. Click Open folder as vault *(slide 61)*
+### 34. Click Open folder as vault *(slide 61)*
 
 A start screen comes up with a few choices.
 
 **Already have Obsidian open on something else?** *(slide 62)* Look at the very bottom left corner, click the vault name, click **Manage vaults**, then **Open folder as vault**.
 
-### 48. Find your folder the fast way *(slide 63)*
+### 35. Find your folder the fast way *(slide 63)*
 
 - Type your folder name in the search box at the top right
 - Your folder shows up. Click it.
@@ -380,15 +336,21 @@ A start screen comes up with a few choices.
 
 You should see **00-Intake**, **Agent-OS**, **CLAUDE** and **README** inside. That is the right one.
 
-### 49. Click Trust author and enable plugins *(slide 64)*
+### 36. Click Trust author and enable plugins *(slide 64)*
 
 One box pops up. Click that button.
 
-### 50. This is your business now *(slide 65)*
+### 37. This is your business now *(slide 65)*
 
 Every file on the left is part of your system. Your brand, your offers, your scripts, your frameworks, your skills.
 
 **All of it is on your computer. You own it.**
+
+---
+
+# It updates itself
+
+Every time you open BOSS it brings in Krista's latest version and installs it. You never do anything. A brand-new release takes open, close, open. If you ever want to force it, say: check for updates.
 
 ---
 

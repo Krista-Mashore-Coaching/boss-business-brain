@@ -40,41 +40,37 @@ Do not go poking at it yourself. Do this, in this order.
 
 # Part 1: Build your Business Brain
 
-### 1. Download the file on your LAPTOP
+### 1. Open Claude Desktop
 
-Open a browser on the laptop you are going to work on and go to the link we gave you.
+Claude Desktop is the app on your computer, not claude.ai in a browser tab. If you do not have it, download it at **claude.ai/download**, sign in and run the installer.
 
-Do not scan a QR code with your phone. The file has to land on the laptop. If you already did, open your email on the laptop and use the link there.
-
-Enter your name, your email, and the password.
-
-### 2. Extract it. This is the step people get wrong.
-
-The file is `BOSS-AI-Business-Brain.zip` and it lands in your Downloads folder.
-
-**Right-click it, choose Extract All, then click Extract.**
-
-Double-clicking a zip on Windows opens a window that *looks* like a folder. It is not one. Nothing has been unpacked, and Claude cannot read a folder that is still zipped. Skip this step and everything after it fails in a way that makes no sense.
-
-You know it worked when there is a folder next to the zip, same name, no zipper on the icon.
-
-### 3. Open the Claude app
-
-The app on your computer, not claude.ai in a browser. If you do not have it, get it at **claude.ai/download** and run the installer.
-
-### 4. Point it at your folder
+### 2. Click Code, then New session, then Select folder
 
 Click **Code** at the top. Start a **new** session. Click **Select folder**.
 
-Choose the folder you just extracted, the one with `START-HERE.md` sitting directly inside it. If you open it and see another folder with the same name inside, go one level in and pick that one. Extract All often makes that extra layer.
+Pick your **Desktop** from the list on the left side of the picker. Any folder works here. BOSS builds the right folder for you in the next step.
 
-**Cannot find the folder you just made?** Look in **OneDrive**. If OneDrive backup is on, which it is on most computers by default, your real Desktop and Documents live inside OneDrive and the plain ones are empty. Search `START-HERE` in File Explorer and it will find it.
-
-### 5. Click Trust
+### 3. Click Trust
 
 Claude asks once whether you trust this folder. Click **Trust**.
 
 **There is no second permission box on Windows.** If you are waiting for one, stop waiting and move on.
+
+### 4. Copy this one line and paste it in
+
+Copy the line below. Click in the chat box. Paste it. Press return.
+
+> Set up my BOSS Business Brain. Download https://github.com/Krista-Mashore-Coaching/boss-business-brain-download/releases/latest/download/BOSS-AI-Business-Brain.zip and unzip it so that the file START-HERE.md sits directly inside a folder named BOSS-AI-Business-Brain in my Sites folder (create Sites in my home folder if it does not exist, and do not leave an extra folder in between). Delete the zip, then tell me exactly how to open that folder as my new session and say hi. Do not ask me any questions until it is unzipped.
+
+**It is the one that starts with "Set up my BOSS Business Brain." It looks long. That is fine.** You do not need to read it or understand it. Copy the whole thing and paste the whole thing.
+
+**Got here by scanning a QR code on your phone?** Type your email in on that page and open the email on your computer. The line to paste is in it.
+
+### 5. BOSS downloads it
+
+BOSS downloads the file, builds your folder, unzips it, and deletes the zip. When it is done, it tells you exactly what to do: click **Select folder** again, choose **Sites**, then **BOSS-AI-Business-Brain**, click **Trust**, and say hi.
+
+This works the same whether OneDrive backup is on or off. BOSS finds your real home folder either way.
 
 ### 6. Say hi
 
@@ -95,6 +91,8 @@ Near the end it walks you through it and saves your username. Two minutes.
 ---
 
 # Part 2: Install your Operating System
+
+**Yours, for one business.** This system is licensed to you. Copying it, sharing it, or installing it for anyone else breaks the agreement you signed. Every copy is tied to the GitHub account it was installed under, so a copy that turns up somewhere else can be traced back, and Krista's team will take legal action. A business partner named on your signed partnership agreement is covered. Nobody else is.
 
 Every step below matches a slide in the video, so you can follow either one. The video is filmed on a Mac. Where Windows is different, this guide is right and the video is not.
 
@@ -163,7 +161,7 @@ Click **number 2, Install my Operating System**. You do not type anything. Just 
 
 ### 10. It asks which system you bought *(slide 18)*
 
-Click **number 1, Real estate agents and lenders**.
+Click the one that is you: **number 1, Real estate agents and lenders**, or **number 2, Coaches, consultants and everyone else**.
 
 ### 11. It asks about the form *(slide 19)*
 
@@ -185,19 +183,13 @@ A box says *Allow Claude to run...*
 
 BOSS checks whether Git is on your machine. Most people do not have it. That is normal.
 
-If it is missing, it sends you to **git-scm.com/download/win**.
+**BOSS installs it for you, and picks the right build for your machine.** You do not open a download page, you do not choose between versions, and you do not need to know what processor you have.
 
-**Pick the 64-bit Standalone Installer.** The page offers more than one and the wrong one fails confusingly. ARM64 is only for ARM devices, which is rare. Not sure? Open **Settings, System, About** and read the processor line.
+About a minute. Keep clicking **Always allow**.
 
-Run the installer and click Next on every screen. The defaults are right. About a minute.
+The video sends you to a download page here to pick a build yourself. Skip that. It is the step people most often got wrong.
 
-### 14. Close your terminal window and open a new one
-
-If a black or blue command window is open, close it completely and let BOSS open a fresh one.
-
-A newly installed tool is invisible to a window that was already open. This is the single most common Windows blocker, and it looks exactly like the install failed when it did not.
-
-### 15. It installs the GitHub tool *(the Windows version of slide 33)*
+### 14. It installs the GitHub tool *(the Windows version of slide 33)*
 
 A box comes up asking to install the GitHub CLI. Click **Always allow**. About a minute. Let it run.
 
@@ -205,26 +197,26 @@ A box comes up asking to install the GitHub CLI. Click **Always allow**. About a
 
 From here your screens match the video again.
 
-### 16. It gives you a code *(slide 34)*
+### 15. It gives you a code *(slide 34)*
 
 A code in big red letters, like `9247-D52F`. Write it down or leave the window open.
 
-### 17. Open github.com/login/device *(slide 35)*
+### 16. Open github.com/login/device *(slide 35)*
 
 New tab. Type `github.com/login/device`.
 
-### 18. Make sure it is YOUR account *(slide 36)*
+### 17. Make sure it is YOUR account *(slide 36)*
 
 The page says **Device Activation** and **Signed in as [your name]**.
 
 - Your GitHub name? Click the green **Continue**.
 - Wrong name? Click **Use a different account** and sign in as you.
 
-### 19. Type in your code *(slide 37)*
+### 18. Type in your code *(slide 37)*
 
 Eight little boxes appear. Type the code. The dash is already there. Click the green **Continue**.
 
-### 20. Look for the green check mark *(slide 38)*
+### 19. Look for the green check mark *(slide 38)*
 
 The page says **Authorize GitHub CLI**. Scroll down to **Organization access**.
 
@@ -232,58 +224,59 @@ The page says **Authorize GitHub CLI**. Scroll down to **Organization access**.
 
 No green check? Screenshot it and bring it to office hours, the call, or the Facebook group.
 
-### 21. Scroll all the way down *(slide 39)*
+### 20. Scroll all the way down *(slide 39)*
 
 The yellow box about your location is normal. Ignore it. Keep scrolling, the button is at the bottom. Click the green **Authorize github**.
 
 You did it when it says **Congratulations, you're all set!** *(slide 40)*
 
-### 22. Back to Claude, click Done *(slide 41)*
+### 21. Back to Claude, click Done *(slide 41)*
 
 Click number 1, Done. Then one more **Always allow** on *Configure git credentials and check access*. *(slide 42)*
 
-### 23. Name your folder *(slide 43)*
+### 22. It names your folder *(slide 43)*
 
-BOSS says **You're in**.
+BOSS says **You're in**, then tells you the folder it is using. It builds the name
+from your business name, so there is nothing to choose and nothing to get wrong.
 
-- Click **2. Let me type a name** and type your business name
-- **Short. Dashes instead of spaces. No spaces ever.**
-- Or click **1. My-Operating-System** if you do not care
+The name is **BOSS-OS-** plus your business name, like `BOSS-OS-smith-lending`. Your private backup gets the same name. It is called BOSS, so the folder is named BOSS.
 
-**Write your folder name down. You need it in three steps.** *(slide 44)*
+The video shows a menu here asking you to pick a name. You will not see it.
 
-### 24. One more Always allow *(slide 45)*
+**Note down the folder name it gives you. You need it in three steps.** *(slide 44)*
+
+### 23. One more Always allow *(slide 45)*
 
 The box says *Clone the Operating System repo*. Click **Always allow**.
 
-### 25. It is on your machine *(slide 46)*
+### 24. It is on your machine *(slide 46)*
 
 About 130 skills just landed in your folder. BOSS gives you a path in a little box. **Click the copy icon on that box.**
 
 ## Opening your system
 
-### 26. Click New session *(slide 47)*
+### 25. Click New session *(slide 47)*
 
-### 27. Click the folder button at the bottom *(slide 48)*
+### 26. Click the folder button at the bottom *(slide 48)*
 
 Look at the bottom where it says **Local**. Click the folder button next to it.
 
-### 28. Paste the path. Click Open. *(slide 49)*
+### 27. Paste the path. Click Open. *(slide 49)*
 
 - **Easy way:** paste the path you copied, **Ctrl + V**
 - **Or:** click through **C:** then **Users** then **your name** then **Sites** then your folder
 
 Click **Open**.
 
-### 29. Click Trust workspace *(slide 50)*
+### 28. Click Trust workspace *(slide 50)*
 
 A box says *Trust this workspace?* Check that the path is YOUR folder. Click the black **Trust workspace**.
 
-### 30. Check the top of the window *(slide 51)*
+### 29. Check the top of the window *(slide 51)*
 
-It should say the name of your system: **Agent-Authority-Operating-System** if you are an agent or lender, **Authority-Operating-System** if you are a coach or consultant. That is right. That is its real name.
+It should say **Agent-Authority-Operating-System** or **Authority-Operating-System**, depending on which one you chose. That is right. That is its real name.
 
-### 31. Type: set up my OS *(slide 52)*
+### 30. Type: set up my OS *(slide 52)*
 
 **This one takes 45 to 60 minutes.**
 
@@ -291,49 +284,41 @@ It should say the name of your system: **Agent-Authority-Operating-System** if y
 - **You will not answer the same question twice**
 - Answer the questions. Keep clicking **Always allow**.
 
-### 32. It asks about your calendar and email *(slide 53)*
+### 31. It asks about your calendar and email *(slide 53)*
 
 Which calendar do you actually open day to day? Click **Google Calendar** or **Outlook**. Same for email.
 
 **Pick the one you really use, not the one you have heard of.**
 
-### 33. It asks about your private backup *(slide 54)*
+### 32. Your private backup happens by itself *(slides 54 and 55)*
 
-Take the answers marked **(Recommended)**. This keeps your work separate and private, under your own account.
+You will see one sentence go by: **"Your work is now backed up privately. Only you can see it."** That is the whole thing. There is nothing to approve, nothing to name, and nothing to confirm.
 
-### 34. If it asks a big question about git history *(slide 55)*
+Slides 54 and 55 in the video show being asked about the backup, and being asked a long technical question about history. **You should not see either one.** If you do, something has gone wrong: screenshot it, say no for now, and bring it to office hours. Do not try to answer it.
 
-It is checking before it touches anything. Say:
+## Keep your computer on
 
-> This is my personal kit. I'm a student. Go ahead.
+BOSS runs things on a schedule: your morning brief, and the jobs built into your kit. A sleeping computer runs nothing, scheduled or not. BOSS asks whether this is a desktop or a laptop, then sets your computer to stay awake by itself. On Windows, it sets sleep to never while your computer is plugged in. No admin needed.
 
-Then it keeps going.
+**On a laptop:** keep it plugged in and the lid open when you want things to run. A closed lid is asleep, scheduled or not. If you have to close it, ask BOSS "how do I run from GitHub."
 
-## Obsidian, the window into your files
-
-### 35. Now let's get Obsidian *(slide 56)*
+### 33. Now let's get Obsidian *(slides 56 to 60)*
 
 Say yes when BOSS asks. Obsidian is a window that lets you see and read all your files. **Nothing lives inside it.** Your files are already on your computer.
 
-### 36. Go to obsidian.md/download *(slide 57)*
+**BOSS installs it for you. You do not download anything.**
 
-Open Chrome, type `obsidian.md/download`, click the download button for Windows.
+Slides 57 to 60 in the video show going to a download page, opening the file, and clicking through an installer. **Skip all of it.** BOSS fetches Obsidian straight from the people who make it and installs it itself. There is no browser, no download arrow, no dragging, and no "are you sure this is safe" box.
 
-### 37. Open the download *(slide 58)*
+Just wait. It takes about a minute, and BOSS tells you when it is done.
 
-Look at the top right of Chrome for the download arrow. Click it. Click the Obsidian file.
-
-### 38. Click through the installer *(slide 59)*
-
-**You get an installer. There is no dragging on Windows.** Click through it and let it finish. It usually opens Obsidian by itself when it is done.
-
-### 39. Click Open folder as vault *(slide 61)*
+### 34. Click Open folder as vault *(slide 61)*
 
 A start screen comes up with a few choices.
 
 **Already have Obsidian open on something else?** *(slide 62)* Look at the very bottom left corner, click the vault name, click **Manage vaults**, then **Open folder as vault**.
 
-### 40. Find your folder the fast way *(slide 63)*
+### 35. Find your folder the fast way *(slide 63)*
 
 - Type your folder name in the search box at the top right
 - Your folder shows up. Click it.
@@ -341,11 +326,11 @@ A start screen comes up with a few choices.
 
 You should see **00-Intake**, **Agent-OS**, **CLAUDE** and **README** inside. That is the right one.
 
-### 41. Click Trust author and enable plugins *(slide 64)*
+### 36. Click Trust author and enable plugins *(slide 64)*
 
 One box pops up. Click that button.
 
-### 42. This is your business now *(slide 65)*
+### 37. This is your business now *(slide 65)*
 
 Every file on the left is part of your system. Your brand, your offers, your scripts, your frameworks, your skills.
 
@@ -357,7 +342,13 @@ Every file on the left is part of your system. Your brand, your offers, your scr
 
 **Closing the Claude window does not quit Claude.** It keeps running. To really quit it, find the Claude icon in the **system tray** by the clock at the bottom right, right-click it, choose **Quit**, watch it disappear, then reopen. If a step told you to restart Claude and nothing changed, this is why.
 
-**A command that "is not recognized" right after you installed it** is almost never a failed install. Close that window completely, open a new one, and try again.
+**A command that "is not recognized" right after you installed it** is almost never a failed install. BOSS refreshes this by itself now and carries on, so you should not see it at all. If you do, tell BOSS and let it sort it out rather than closing anything yourself.
+
+---
+
+# It updates itself
+
+Every time you open BOSS it brings in Krista's latest version and installs it. You never do anything. A brand-new release takes open, close, open. If you ever want to force it, say: check for updates.
 
 ---
 

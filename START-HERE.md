@@ -13,9 +13,13 @@ They are the same steps written twice, once for each machine, because half of th
 
 ## The short version, if you would rather just go
 
+**If you pasted BOSS's one-line command to get here, all of this already happened.** BOSS downloaded this folder, unzipped it, and told you how to open it. You don't need to do anything below. Say hi, or say nothing at all, and it starts on its own.
+
+**Got this folder some other way** (someone sent it to you, or you downloaded it yourself)? Do this:
+
 **1. Make sure this folder is really unzipped.** On Windows that means right-click the zip, Extract All, then Extract. Looking inside a zip is not the same as extracting it, and Claude cannot read a folder that is still zipped. On a Mac, double-clicking the zip is enough.
 
-**2. Open the Claude app on your computer.** Not claude.ai in a browser. If you do not have it, get it at [claude.ai/download](https://claude.ai/download).
+**2. Open Claude Desktop.** That is the app on your computer, not claude.ai in a browser tab. If you do not have it, get it at [claude.ai/download](https://claude.ai/download).
 
 Then click **Code** at the top, start a **new** session, and click **Select folder**. Choose this folder, the one with `START-HERE.md` sitting directly inside it. If you see another folder with the same name inside, go one level in and pick that one.
 
@@ -23,7 +27,7 @@ Then click **Code** at the top, start a **new** session, and click **Select fold
 
 **On a Mac you will see a second box, from your Mac rather than from Claude**, saying Claude would like to access files in that folder. Click Allow. Same idea, and it also only asks once. **On Windows there is no second box.** If you are waiting for one, stop waiting.
 
-That's it. You don't need to type anything special. Say hi, or say nothing at all, and it starts on its own.
+Either way, that's it. You don't need to type anything special. Say hi, or say nothing at all, and it starts on its own.
 
 ## Two things that make people think it broke
 
