@@ -300,7 +300,7 @@ Slides 54 and 55 in the video show being asked about the backup, and being asked
 
 BOSS runs things on a schedule: your morning brief, and the jobs built into your kit. A sleeping computer runs nothing, scheduled or not. BOSS asks whether this is a desktop or a laptop, then sets your computer to stay awake by itself. On Windows, it sets sleep to never while your computer is plugged in. No admin needed.
 
-**On a laptop:** keep it plugged in and the lid open when you want things to run. A closed lid is asleep, scheduled or not. If you have to close it, ask BOSS "how do I run from GitHub."
+**On a laptop:** keep it plugged in and the lid open when you want things to run. A closed lid is asleep, scheduled or not. With the lid closed, nothing runs, and no phone, website, or "select repository" session can stand in for it, so plan on leaving it open when something is scheduled.
 
 ### 33. Now let's get Obsidian *(slides 56 to 60)*
 
