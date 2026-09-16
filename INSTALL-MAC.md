@@ -68,7 +68,7 @@ Clicked Don't Allow by accident? Apple menu, System Settings, Privacy and Securi
 
 Copy the line below. Click in the chat box. Paste it. Press return.
 
-> Set up my BOSS Business Brain. Download https://github.com/Krista-Mashore-Coaching/boss-business-brain-download/releases/latest/download/BOSS-AI-Business-Brain.zip and unzip it so that the file START-HERE.md sits directly inside a folder named BOSS-AI-Business-Brain in my Sites folder (create Sites in my home folder if it does not exist, and do not leave an extra folder in between). Delete the zip, then tell me exactly how to open that folder as my new session and say hi. Do not ask me any questions until it is unzipped.
+> Set up my BOSS Business Brain. Download https://github.com/Krista-Mashore-Coaching/boss-business-brain-download/releases/latest/download/BOSS-AI-Business-Brain.zip and unzip it so that the file START-HERE.md sits directly inside a folder named BOSS-AI-Business-Brain in my Sites folder (create Sites in my home folder if it does not exist, and do not leave an extra folder in between). Delete the zip. Then tell me, in three short steps for Claude Desktop and never Terminal: click Select folder, choose Sites and then BOSS-AI-Business-Brain, click Trust, and say hi. Do not ask me any questions until it is unzipped.
 
 **It is the one that starts with "Set up my BOSS Business Brain." It looks long. That is fine.** You do not need to read it or understand it. Copy the whole thing and paste the whole thing.
 
