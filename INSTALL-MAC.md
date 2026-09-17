@@ -14,15 +14,14 @@ Two parts. **Part 1** builds your Business Brain. **Part 2** installs your Opera
 
 # What it looks like while it's working
 
-Read this before you start, because it is the thing that makes people think they broke something.
+BOSS works quietly. During setup it says one thing at the start ("Setting things up, this
+takes a few minutes, you do not need to do anything") and one thing at the end ("Done"). In
+between it may be silent for a long stretch. That is normal.
 
-**BOSS talks while it works.** It will say things like *"I found an error,"* *"that path was wrong, fixed it,"* *"this one is missing, installing it now."* Sometimes for a long stretch.
-
-**That is the system working. It is not the system breaking.**
-
-You are hiring more than a hundred employees at once. Train a hundred real people on their first day and things go sideways all day long. The difference here is that BOSS finds its own problems, fixes them while you watch, and tells you it did. The talking is the repair.
-
-Some steps take a long time. Installing takes minutes. Setting up your system takes 45 to 60 minutes. A screen that looks stuck is usually a screen that is working. Let it run. It stops and asks you clearly when it needs you.
+If it finds something out of place along the way, it fixes it and keeps going. It will not
+tell you about every small thing it corrected, the same way a good assistant does not report
+every typo they fixed. If it ever needs you, it says "please" and tells you exactly what to
+click.
 
 ---
 
